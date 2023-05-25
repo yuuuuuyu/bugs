@@ -1,0 +1,32 @@
+{
+    "name": "bugs",
+    "version": "1.0.0",
+    "description": "bug大集合",
+    "main": "index.js",
+    "scripts": {
+        "docs:dev": "vitepress dev docs",
+        "docs:build": "vitepress build docs",
+        "docs:serve": "vitepress serve docs",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://gitee.com/yu_zhi_yong/bugs.git"
+    },
+    "keywords": [
+        "bugs",
+        "vue",
+        "elementui"
+    ],
+    "author": "yuzhiyong",
+    "license": "ISC",
+    "devDependencies": {
+        "vitepress": "^1.0.0-beta.1"
+    },
+    "dependencies": {
+        "@element-plus/icons-vue": "^2.1.0",
+        "element-plus": "^2.3.5",
+        "pinia": "^2.1.3",
+        "vitepress-theme-demoblock": "^2.0.2"
+    }
+}
