@@ -11,7 +11,7 @@ const nav = [
     },
     {
         "text": "技巧",
-        "link": "/bugs/",
+        "link": "/skills/",
         "target": "_self"
     },
 ]
