@@ -1,10 +1,7 @@
-import docs from './docs-links'
-import learning from './learning-links'
+import bug from './bug-links'
 
 const sidebar = {
-    '/developer': [],
-    '/docs': docs,
-    '/learning': learning,
+    '/bug': bug,
     '/': []
 }
 export default sidebar
