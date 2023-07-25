@@ -7,6 +7,9 @@ const bugs = [
             {
                 text: 'Pagination分页器默认英文',
                 link: '/bugs/elementplus/question/1'
+            }, {
+                text: 'ElementPlus升级后多语言报错',
+                link: '/bugs/elementplus/question/2'
             },
         ]
     },
