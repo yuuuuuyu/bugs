@@ -19,16 +19,9 @@ const bugs = [
         collapsed: true,
         items: [
             {
-                text: '简介',
-                target: '_blank',
-                link: '/bugs/beeboat/index/'
-            }, {
-                text: '问题1',
-                link: '/bugs/beeboat/question/1/'
-            }, {
-                text: '问题2',
-                link: '/bugs/beeboat/question/2/'
-            },
+                text: '蜂舟拖拽表格列名不显示中文',
+                link: '/bugs/beeboat/question/1'
+            }
         ]
     },
     {
