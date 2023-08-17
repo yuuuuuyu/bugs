@@ -10,6 +10,11 @@ const nav = [
         "target": "_self"
     },
     {
+        "text": "Documents",
+        "link": "/skills/",
+        "target": "_self"
+    },
+    {
         "text": "技巧",
         "link": "/skills/",
         "target": "_self"

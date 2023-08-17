@@ -21,17 +21,23 @@ const bugs = [
             {
                 text: '蜂舟拖拽表格列名不显示中文',
                 link: '/bugs/beeboat/question/1'
+            }, {
+                text: 'MicroApp基座切换应用跳转登录',
+                link: '/bugs/beeboat/question/2'
+            }, {
+                text: '表格高亮异常/排序后序号列异常',
+                link: '/bugs/beeboat/question/3'
             }
         ]
     },
     {
-        text: 'Beeboat-ui',
+        text: 'Vite',
         collapsible: true,
         collapsed: true,
         items: [
             {
-                text: '简介1',
-                link: 'learning/video/'
+                text: '打包报错 JavaScript heap out of memory',
+                link: 'bugs/vite/question/1'
             },
         ]
     },
