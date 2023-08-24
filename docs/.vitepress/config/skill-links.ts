@@ -7,6 +7,9 @@ const skills = [
             {
                 text: 'Teleport',
                 link: 'skills/vue3.x/teleport'
+            }, {
+                text: 'Pinia持久化',
+                link: 'skills/vue3.x/pinia'
             },
         ]
     }, {
