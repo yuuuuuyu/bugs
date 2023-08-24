@@ -70,3 +70,6 @@ export const useStore = defineStore('main', s{
 })
 ```
 
+## API
+
+https://prazdevs.github.io/pinia-plugin-persistedstate/zh/guide/
