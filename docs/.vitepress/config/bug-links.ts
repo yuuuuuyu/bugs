@@ -27,6 +27,9 @@ const bugs = [
             }, {
                 text: '表格高亮异常/排序后序号列异常',
                 link: '/bugs/beeboat/question/3'
+            }, {
+                text: 'BtTable2修改表格列名不生效',
+                link: '/bugs/beeboat/question/4'
             }
         ]
     },
