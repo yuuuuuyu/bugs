@@ -22,6 +22,16 @@ const skills = [
                 link: 'skills/elementplus/clickoutside'
             },
         ]
+    }, {
+        text: '插件',
+        collapsible: true,
+        collapsed: true,
+        items: [
+            {
+                text: 'DirverJs功能步骤引导',
+                link: 'skills/plugins/dirverjs'
+            },
+        ]
     }
 ]
 export default skills

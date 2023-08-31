@@ -2,12 +2,14 @@ lockfileVersion: 5.3
 
 specifiers:
   '@element-plus/icons-vue': ^2.1.0
+  driver.js: ^1.2.1
   element-plus: ^2.3.5
   vitepress: ^1.0.0-beta.1
   vitepress-theme-demoblock: ^2.0.2
 
 dependencies:
   '@element-plus/icons-vue': 2.1.0
+  driver.js: 1.2.1
   element-plus: 2.3.5
   vitepress-theme-demoblock: 2.0.2
 
@@ -747,6 +749,10 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       path-type: 4.0.0
+    dev: false
+
+  /driver.js/1.2.1:
+    resolution: {integrity: sha512-6nDbVnZdjRgTsJOOmGRmMf/t6cHnMyyZK/wLSbdLZp33I7odPglw1cVlX3TMaPnMDYIJUq7h8a0buejOLqM7XQ==}
     dev: false
 
   /element-plus/2.3.5:
