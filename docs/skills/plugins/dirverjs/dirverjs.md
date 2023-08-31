@@ -18,27 +18,24 @@ pnpm install driver.js
 ```
 
 ## 使用
-```vue
-<template>
-    <div id="some-element">111</div>
-    <div>222</div>
-    <div>333</div>
-    <div>444</div>
-</template>
-<script setup lang="ts">
+<!--  -->
+```ts
 import { driver } from "driver.js";
 import "driver.js/dist/driver.css";
 
-const driverObj = driver();
-driverObj.highlight({
-  element: "#some-element",
-  popover: {
-    title: "Title",
-    description: "Description"
-  }
+const driverObj = driver({
+  animate: false,
+  showProgress: false,
+  showButtons: ['next', 'previous', 'close'],
+  steps: [
+    { element: '#tour-example', popover: { title: 'Animated Tour Example', description: 'Here is the code example showing animated tour. Let\'s walk you through it.', side: "left", align: 'start' }},
+  ]
 });
-</script>
-``` 
+driverObj.drive();
+```
+
+## 代码
+https://gitee.com/yu_zhi_yong/bugs-resources
 
 ## API
 

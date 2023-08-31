@@ -1,5 +1,6 @@
 import {UserConfig} from 'vitepress'
 import {demoBlockPlugin} from 'vitepress-theme-demoblock'
+
 import nav from './config/nav'
 import sidebar from './config/sidebar'
 

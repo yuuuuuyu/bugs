@@ -29,7 +29,7 @@ const skills = [
         items: [
             {
                 text: 'DirverJs功能步骤引导',
-                link: 'skills/plugins/dirverjs'
+                link: 'skills/plugins/dirverjs/dirverjs'
             },
         ]
     }
