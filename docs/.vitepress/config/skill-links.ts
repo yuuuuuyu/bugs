@@ -23,6 +23,16 @@ const skills = [
             },
         ]
     }, {
+        text: 'Beeboat',
+        collapsible: true,
+        collapsed: true,
+        items: [
+            {
+                text: '使用代码片段重写表格列的三种方式',
+                link: 'skills/beeboat/1'
+            },
+        ]
+    }, {
         text: '插件',
         collapsible: true,
         collapsed: true,
