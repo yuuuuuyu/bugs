@@ -30,6 +30,12 @@ const skills = [
             {
                 text: '使用代码片段重写表格列的三种方式',
                 link: 'skills/beeboat/1'
+            }, {
+                text: '使用代码片段实现动态列',
+                link: 'skills/beeboat/2'
+            }, {
+                text: '使用代码片段实现表头合并',
+                link: 'skills/beeboat/3'
             },
         ]
     }, {
