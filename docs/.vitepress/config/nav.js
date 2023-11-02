@@ -1,7 +1,7 @@
 const nav = [
     {
         "text": "Gitee",
-        "link": "https://gitee.com/yu_zhi_yong",
+        "link": "https://gitee.com/yu_zhi_yong/bugs/issues",
         "target": "_blank"
     },
     {

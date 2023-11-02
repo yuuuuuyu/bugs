@@ -13,22 +13,12 @@ const skills = [
             },
         ]
     }, {
-        text: 'ElementPlus',
-        collapsible: true,
-        collapsed: true,
-        items: [
-            {
-                text: 'ClickOutSide',
-                link: 'skills/elementplus/clickoutside'
-            },
-        ]
-    }, {
         text: 'Beeboat',
         collapsible: true,
-        collapsed: true,
+        collapsed: false,
         items: [
             {
-                text: '使用代码片段重写表格列的三种方式',
+                text: '使用代码片段重写表格列',
                 link: 'skills/beeboat/1'
             }, {
                 text: '使用代码片段实现动态列',
@@ -41,11 +31,24 @@ const skills = [
     }, {
         text: '插件',
         collapsible: true,
-        collapsed: true,
+        collapsed: false,
         items: [
             {
                 text: 'DirverJs功能步骤引导',
                 link: 'skills/plugins/dirverjs/dirverjs'
+            }, {
+                text: 'LuckSheet在线excel/导入/导出',
+                link: ''
+            },
+        ]
+    }, {
+        text: 'OPL',
+        collapsible: true,
+        collapsed: false,
+        items: [
+            {
+                text: '参数归一化',
+                link: 'skills/opl/参数归一化.md'
             },
         ]
     }
