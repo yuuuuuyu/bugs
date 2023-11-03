@@ -20,12 +20,21 @@ const skills = [
             {
                 text: '使用代码片段重写表格列',
                 link: 'skills/beeboat/1'
-            }, {
+            },
+            {
                 text: '使用代码片段实现动态列',
                 link: 'skills/beeboat/2'
-            }, {
+            },
+            {
                 text: '使用代码片段实现表头合并',
                 link: 'skills/beeboat/3'
+            },
+            {
+                text: '重写组件事件/属性',
+                link: 'skills/beeboat/4'
+            }, {
+                text: '重写组件事件使用emit',
+                link: 'skills/beeboat/5'
             },
         ]
     }, {
