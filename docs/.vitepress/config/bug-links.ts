@@ -35,6 +35,9 @@ const bugs = [
             }, {
                 text: 'senceDataList.forEach is not a function..',
                 link: '/bugs/beeboat/question/5'
+            }, {
+                text: '蜂舟列设置左/右冻结不生效',
+                link: '/bugs/beeboat/question/6'
             }
         ]
     }, {
