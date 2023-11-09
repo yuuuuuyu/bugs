@@ -5,7 +5,7 @@ import nav from './config/nav'
 import sidebar from './config/sidebar'
 
 const config: UserConfig = {
-    base: './',
+    base: '/ebugs/',
     themeConfig: {
         nav,
         sidebar,
