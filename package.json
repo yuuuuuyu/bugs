@@ -25,6 +25,7 @@
     },
     "dependencies": {
         "@element-plus/icons-vue": "^2.1.0",
+        "@types/node": "^20.9.0",
         "driver.js": "^1.2.1",
         "element-plus": "^2.3.5",
         "vitepress-theme-demoblock": "^2.0.2"

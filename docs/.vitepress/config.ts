@@ -5,6 +5,8 @@ import nav from './config/nav'
 import sidebar from './config/sidebar'
 
 const config: UserConfig = {
+    // base: process.env.NODE_ENV === 'prod/uction' ? '/my-project/' : '/',
+    outDir: './dist/',
     themeConfig: {
         nav,
         sidebar,
