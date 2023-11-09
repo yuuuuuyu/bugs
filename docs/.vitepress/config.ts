@@ -5,8 +5,7 @@ import nav from './config/nav'
 import sidebar from './config/sidebar'
 
 const config: UserConfig = {
-    base: './',
-    outDir: './dist/',
+    base: '/bugs/',
     themeConfig: {
         nav,
         sidebar,
