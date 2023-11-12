@@ -10,7 +10,7 @@ const nav = [
         "target": "_self"
     },
     {
-        "text": "技巧",
+        "text": "技巧1",
         "link": "/skills/",
         "target": "_self"
     },

@@ -3,6 +3,8 @@ node_modules
 scripts/docsearch-scraper
 docs/.vitepress/cache
 /dist
+deploy.sh
+auto-publish.js
 
 # local env files
 .env.local
