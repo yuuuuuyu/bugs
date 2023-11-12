@@ -7,7 +7,7 @@
         "dev": "vitepress dev docs --host 0.0.0.0",
         "build": "vitepress build docs",
         "serve": "vitepress serve docs",
-        "publish:version": "pnpm build && node ./auto-publish.js",
+        "publish:version": "node ./auto-publish.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
