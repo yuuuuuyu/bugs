@@ -38,7 +38,11 @@ const bugs = [
             }, {
                 text: '蜂舟列设置左/右冻结不生效',
                 link: '/bugs/beeboat/question/6'
+            }, {
+                text: '蜂舟平台表格展示的数据和接口返回不一致',
+                link: '/bugs/beeboat/question/7'
             }
+            
         ]
     }, {
         text: 'Vite',
@@ -48,6 +52,16 @@ const bugs = [
             {
                 text: '打包报错 JavaScript heap out of memory',
                 link: 'bugs/vite/question/1'
+            },
+        ]
+    },{
+        text: 'Vue',
+        collapsible: true,
+        collapsed: false,
+        items: [
+            {
+                text: 'Vue3 项目启动报错isFunction is not a function',
+                link: 'bugs/vue/question/1'
             },
         ]
     },
