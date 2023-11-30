@@ -53,6 +53,10 @@ const bugs = [
                 text: '打包报错 JavaScript heap out of memory',
                 link: 'bugs/vite/question/1'
             },
+            {
+                text: '打包报错 ENOENT: no such file or directory, scandir xxxxx',
+                link: 'bugs/vite/question/2'
+            },
         ]
     },{
         text: 'Vue',
