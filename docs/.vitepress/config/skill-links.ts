@@ -58,6 +58,10 @@ const skills = [
         text: "LuckSheet在线excel/导入/导出",
         link: "",
       },
+      {
+        text: "新Vue调试工具",
+        link: "skills/plugins/devtools/devtools",
+      },
     ],
   },
   {
