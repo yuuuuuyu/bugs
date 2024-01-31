@@ -43,6 +43,14 @@ const skills = [
         text: "重写组件事件使用emit",
         link: "skills/beeboat/5",
       },
+      {
+        text: "【逻辑事件系列】通过判断行数据指定字段来控制按钮的禁用启用",
+        link: "skills/beeboat/logic/1",
+      },
+      {
+        text: "【逻辑事件系列】通过判断表格多选数据来控制按钮的禁用启用",
+        link: "skills/beeboat/logic/2",
+      },
     ],
   },
   {
