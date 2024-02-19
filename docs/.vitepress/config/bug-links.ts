@@ -66,6 +66,10 @@ const bugs = [
         text: "打包报错 ENOENT: no such file or directory, scandir xxxxx",
         link: "bugs/vite/question/2",
       },
+      {
+        text: "打包报错 [vite]: Rollup failed to resolve import xxxxx",
+        link: "bugs/vite/question/3",
+      },
     ],
   },
   {
