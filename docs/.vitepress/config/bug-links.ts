@@ -51,6 +51,10 @@ const bugs = [
         text: "子应用刷新后pinia数据被清空",
         link: "/bugs/beeboat/question/8",
       },
+      {
+        text: "tinymce富文本线上环境报错404",
+        link: "/bugs/beeboat/question/9",
+      },
     ],
   },
   {
