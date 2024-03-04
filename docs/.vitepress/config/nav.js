@@ -14,5 +14,10 @@ const nav = [
         "link": "/skills/",
         "target": "_self"
     },
+    {
+        "text": "扫盲",
+        "link": "/itvs/",
+        "target": "_self"
+    },
 ]
 export default nav

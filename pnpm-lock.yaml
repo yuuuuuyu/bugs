@@ -5,6 +5,7 @@ specifiers:
   '@types/node': ^20.9.0
   driver.js: ^1.2.1
   element-plus: ^2.3.5
+  markdown-it-task-lists: ^2.1.1
   puppeteer: ^21.5.1
   vitepress: ^1.0.0-beta.1
   vitepress-theme-demoblock: ^2.0.2
@@ -17,6 +18,7 @@ dependencies:
   vitepress-theme-demoblock: 2.0.2_@types+node@20.9.0
 
 devDependencies:
+  markdown-it-task-lists: 2.1.1
   puppeteer: 21.5.1
   vitepress: 1.0.0-rc.25_@types+node@20.9.0
 
@@ -1434,6 +1436,10 @@ packages:
   /markdown-it-container/3.0.0:
     resolution: {integrity: sha512-y6oKTq4BB9OQuY/KLfk/O3ysFhB3IMYoIWhGJEidXt1NQFocFK2sA2t0NYZAMyMShAGL6x5OPIbrmXPIqaN9rw==}
     dev: false
+
+  /markdown-it-task-lists/2.1.1:
+    resolution: {integrity: sha512-TxFAc76Jnhb2OUu+n3yz9RMu4CwGfaT788br6HhEDlvWfdeJcLUsxk1Hgw2yJio0OXsxv7pyIPmvECY7bMbluA==}
+    dev: true
 
   /markdown-it/13.0.2:
     resolution: {integrity: sha512-FtwnEuuK+2yVU7goGn/MJ0WBZMM9ZPgU9spqlFs7/A/pDIUNSOQZhUgOqYCficIuR2QaFnrt8LHqBWsbTAoI5w==}
