@@ -15,7 +15,7 @@ const nav = [
         "target": "_self"
     },
     {
-        "text": "扫盲",
+        "text": "笔记",
         "link": "/itvs/",
         "target": "_self"
     },
