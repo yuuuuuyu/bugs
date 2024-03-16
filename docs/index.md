@@ -25,3 +25,5 @@ features:
     title: 笔记
     details: 温故知新,学思并重
 ---
+
+<LanguageChart />

@@ -63,17 +63,17 @@ const itvs = [
       },
     ],
   },
-  {
-    text: "TypeScript",
-    collapsible: true,
-    collapsed: false,
-    items: [
-      {
-        text: "事件循环",
-        link: "skills/vue3.x/teleport",
-      },
-    ],
-  },
+  //   {
+  //     text: "TypeScript",
+  //     collapsible: true,
+  //     collapsed: false,
+  //     items: [
+  //       {
+  //         text: "事件循环",
+  //         link: "skills/vue3.x/teleport",
+  //       },
+  //     ],
+  //   },
   {
     text: "前端八股文",
     collapsible: true,
