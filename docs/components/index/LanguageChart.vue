@@ -50,7 +50,7 @@
                   </template>
                   <div style="height: 160px; width: 117.2px">
                     <img
-                      src="https://oss.justin3go.com/weixin.jpg"
+                      src="../images/wechat.jpg"
                       alt=""
                       style="height: 160px"
                     />
@@ -92,7 +92,6 @@
 <script setup lang="ts">
 import { useData } from "vitepress"
 import { computed } from "vue"
-import { ElPopover, ElButton } from "element-plus"
 
 const { isDark } = useData()
 
