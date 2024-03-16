@@ -29,7 +29,7 @@ log中提示的`@antv/g-webgpu`没有在项目中直接引用，恰好时刚更�
 ![@antv/g-webgpu](../images/3-1.png)
 
 Vite内部使用了Rollup进行构建打包，Rollup 默认只处理 ES6 模块，而更新后的`@antv/g-webgpu`可能使用了CommonJs方式。 -->
-## 解决步骤
+## 解决方案
 <!-- 使用Rollup插件处理CommonJS方法的第三方依赖`@rollup/plugin-commonjs`,项目根目录新建`rollup.config.js`：
 ```js
 import commonjs from '@rollup/plugin-commonjs'

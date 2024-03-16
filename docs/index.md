@@ -16,12 +16,12 @@ hero:
       link: https://gitee.com/yu_zhi_yong/bugs/issues
 features:
   - icon: 🔑
-    title: 使用 Typescript
-    details: 更好的代码提示
+    title: 记录常规 Bug
+    details: 蜂舟平台/组件库/饿了么/Vue/Vite等
   - icon: ⚡
-    title: 按需引入
-    details: 支持按需引入
+    title: 提供功能 Demo
+    details: 经典demo一键复制
   - icon: 🌙
-    title: 黑暗模式
-    details: 支持黑暗模式
+    title: 笔记
+    details: 温故知新,学思并重
 ---

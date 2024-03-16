@@ -64,15 +64,19 @@ const bugs = [
     items: [
       {
         text: "打包报错 JavaScript heap out of memory",
-        link: "bugs/vite/question/1",
+        link: "bugs/vite/question/01JavaScriptHeapOutOfMemory",
       },
       {
         text: "打包报错 ENOENT: no such file or directory, scandir xxxxx",
-        link: "bugs/vite/question/2",
+        link: "bugs/vite/question/02NoSuchFileOrDirectoryScandir",
       },
       {
         text: "打包报错 [vite]: Rollup failed to resolve import xxxxx",
-        link: "bugs/vite/question/3",
+        link: "bugs/vite/question/03RollupFailedToResolveImport",
+      },
+      {
+        text: "使用了CommonJS模块该如何处理",
+        link: "bugs/vite/question/04使用了CommonJS模块该如何处理",
       },
     ],
   },

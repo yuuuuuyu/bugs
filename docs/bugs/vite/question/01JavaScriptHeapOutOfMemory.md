@@ -37,7 +37,7 @@ FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaS
 ## 产生原因
 内存不足，内存溢出
 
-## 解决步骤
+## 解决方案
 1. 安装以下两个依赖`cross-env`/`increase-memory-limit`
 2. `package.json`增加脚本`"fix-memory-limit": "cross-env LIMIT=4096 increase-memory-limit"`,4096如果不够可以继续增加
 3. 修改打包脚本`"build:tzprod": "pnpm fix-memory-limit && rimraf dist && cross-env --max_old_space_size=10000 && cross-env vite build --mode tzprod"`,执行打包前设置node内存

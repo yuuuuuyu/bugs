@@ -21,7 +21,7 @@ public文件夹内存在其他多层路径，如图：
 同时`build/plugin.ts`打包构建插件中，对于文件夹的递归遍历的方法存在问题。如图：
 ![plugin.ts](../images/2-2.png)
 
-## 解决步骤
+## 解决方案
 修改`build/plugin.ts`文件中的`recursiveDirectory`的递归方法，递归调用的时候不要传递根目录(rootFloder)，要传递上一层目录(floder)，代码如下：
 ```js
 function recursiveDirectory(

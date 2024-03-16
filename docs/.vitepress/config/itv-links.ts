@@ -1,5 +1,31 @@
 const itvs = [
   {
+    text: "Vue",
+    collapsible: true,
+    collapsed: false,
+    items: [
+      {
+        text: "Vue2和Vue3的区别",
+        link: "skills/vue3.x/teleport",
+      },
+      {
+        text: "Vue的Diff算法",
+        link: "skills/vue3.x/teleport",
+      },
+    ],
+  },
+  {
+    text: "ES6+",
+    collapsible: true,
+    collapsed: false,
+    items: [
+      {
+        text: "Promise基础",
+        link: "itvs/es/01Promise基础",
+      },
+    ],
+  },
+  {
     text: "浏览器",
     collapsible: true,
     collapsed: false,
@@ -16,34 +42,24 @@ const itvs = [
     collapsed: false,
     items: [
       {
-        text: "JS事件循环机制/宏任务微任务如何工作",
-        link: "itvs/js/2",
+        text: "JS事件循环机制",
+        link: "itvs/js/01JS事件循环",
       },
       {
         text: "原型/原型链",
-        link: "itvs/js/3",
+        link: "itvs/js/02原型链",
       },
     ],
   },
+
   {
-    text: "Vue",
+    text: "Git日常使用",
     collapsible: true,
     collapsed: false,
     items: [
       {
-        text: "事件循环",
-        link: "skills/vue3.x/teleport",
-      },
-    ],
-  },
-  {
-    text: "ES6+",
-    collapsible: true,
-    collapsed: false,
-    items: [
-      {
-        text: "事件循环",
-        link: "skills/vue3.x/teleport",
+        text: "版本回退的方式",
+        link: "itvs/git/01版本回退",
       },
     ],
   },
@@ -88,8 +104,8 @@ const itvs = [
             link: "itvs/八股文/js/01===和==的区别",
           },
           {
-            text: "js宏任务和微任务",
-            link: "itvs/八股文/js/02宏任务和微任务",
+            text: "事件循环进阶",
+            link: "itvs/八股文/js/02事件循环进阶",
           },
           {
             text: "闭包和IIFE",
