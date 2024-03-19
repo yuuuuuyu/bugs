@@ -6,8 +6,8 @@ import nav from "./config/nav"
 import sidebar from "./config/sidebar"
 
 const config: UserConfig = {
-  base: "/ebugs",
-  outDir: "../dist/ebugs",
+  base: "/bugs",
+  outDir: "../dist/bugs",
   build: {
     minify: false,
   },
