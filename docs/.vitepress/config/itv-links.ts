@@ -1,4 +1,4 @@
-const itvs = [
+const 笔记 = [
   {
     text: "Vue",
     collapsible: true,
@@ -6,11 +6,11 @@ const itvs = [
     items: [
       {
         text: "Vue2和Vue3的区别",
-        link: "skills/vue3.x/teleport",
+        link: "/skills/vue3.x/teleport",
       },
       {
         text: "Vue的Diff算法",
-        link: "skills/vue3.x/teleport",
+        link: "/skills/vue3.x/teleport",
       },
     ],
   },
@@ -21,7 +21,7 @@ const itvs = [
     items: [
       {
         text: "Promise基础",
-        link: "itvs/es/01Promise基础",
+        link: "笔记/es/01Promise基础",
       },
     ],
   },
@@ -32,7 +32,7 @@ const itvs = [
     items: [
       {
         text: "EventLoop",
-        link: "itvs/browser/1",
+        link: "/笔记/browser/01浏览器事件循环",
       },
     ],
   },
@@ -43,11 +43,11 @@ const itvs = [
     items: [
       {
         text: "JS事件循环机制",
-        link: "itvs/js/01JS事件循环",
+        link: "/笔记/js/01JS事件循环",
       },
       {
         text: "原型/原型链",
-        link: "itvs/js/02原型链",
+        link: "/笔记/js/02原型链",
       },
     ],
   },
@@ -59,7 +59,7 @@ const itvs = [
     items: [
       {
         text: "版本回退的方式",
-        link: "itvs/git/01版本回退",
+        link: "/笔记/git/01版本回退",
       },
     ],
   },
@@ -86,11 +86,11 @@ const itvs = [
         items: [
           {
             text: "ES6+如何创建私有变量",
-            link: "itvs/八股文/es/01创建私有变量",
+            link: "/笔记/八股文/es/01创建私有变量",
           },
           {
             text: "TypeScript和JavaScript的区别",
-            link: "itvs/八股文/es/02ts和js的区别",
+            link: "/笔记/八股文/es/02ts和js的区别",
           },
         ],
       },
@@ -101,20 +101,20 @@ const itvs = [
         items: [
           {
             text: "===和==的区别",
-            link: "itvs/八股文/js/01===和==的区别",
+            link: "/笔记/八股文/js/01===和==的区别",
           },
           {
             text: "事件循环进阶",
-            link: "itvs/八股文/js/02事件循环进阶",
+            link: "/笔记/八股文/js/02事件循环进阶",
           },
           {
             text: "闭包和IIFE",
-            link: "itvs/八股文/js/03闭包和IIFE",
+            link: "/笔记/八股文/js/03闭包和IIFE",
           },
         ],
       },
     ],
   },
 ]
-export default itvs
+export default 笔记
 

@@ -1,8 +1,8 @@
 const nav = [
     {
-        "text": "Gitee",
-        "link": "https://gitee.com/yu_zhi_yong/bugs/issues",
-        "target": "_blank"
+        "text": "首页",
+        "link": "/",
+        "target": "_self"
     },
     {
         "text": "Bugs",
@@ -16,8 +16,18 @@ const nav = [
     },
     {
         "text": "笔记",
-        "link": "/itvs/",
+        "link": "/笔记/",
         "target": "_self"
+    },
+    {
+        "text": "博客",
+        "link": "/博客/",
+        "target": "_self"
+    },
+    {
+        "text": "Gitee",
+        "link": "https://gitee.com/yuuuuuyu",
+        "target": "_blank"
     },
 ]
 export default nav

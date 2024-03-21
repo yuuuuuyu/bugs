@@ -7,6 +7,8 @@
     --vp-c-brand-darker: #454ce1;
 
     --vp-code-block-bg: #f9fafb;
+
+    --vp-sidebar-width: 320px;
 }
 
 .demo-block .meta {
@@ -34,25 +36,63 @@ html.dark {
     list-style: none;
 }
 
-
-/* 全局滚动条样式 */
-::-webkit-scrollbar {
-    width: 6px;
+/* 左侧导航单行显示 */
+.VPSidebar .items p {
+    display: inline-block;
+    width: calc(var(--vp-sidebar-width) - 100px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 6px;
+    padding-left: 6px;
+    transition: all ease .3s;
 }
 
-/* 滚动条轨道 */
-::-webkit-scrollbar-track {
+.VPSidebar .items p:hover,
+.VPSidebarItem.is-active.has-active {
+    border-radius: 4px;
+    color: #fff !important;
+    transition: all ease .3s;
+}
+
+.VPSidebar .items p:hover {
+    background-color: rgba(52, 81, 178, .2);
+    color: rgba(52, 81, 178, 1) !important;
+}
+
+.VPSidebarItem.is-active.has-active {
+    background-color: rgba(52, 81, 178, .8);
+}
+
+.VPSidebarItem.is-active>.item .link>.text {
+    color: #fff !important;
+}
+
+/* 默认隐藏滚动条 */
+::-webkit-scrollbar {
+    width: 6px;
     background: transparent;
-    /* 轨道的颜色 */
+    /* 这里设置成透明 */
+}
+
+/* 仅在悬浮时显示滚动条 */
+::-webkit-scrollbar:hover {
+    width: 12px;
+}
+
+/* 滚动条轨道无需特别设置，使用默认隐藏状态即可 */
+::-webkit-scrollbar-track:hover {
+    background: transparent;
 }
 
 /* 滚动条滑块 */
 ::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.1);
+    /* 默认隐藏滑块 */
     border-radius: 6px;
 }
 
-/* 滚动条滑块悬浮状态 */
+/* 鼠标悬浮时滑块的样式 */
 ::-webkit-scrollbar-thumb:hover {
     background: rgba(0, 0, 0, 0.4);
 }

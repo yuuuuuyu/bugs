@@ -64,19 +64,19 @@ const bugs = [
     items: [
       {
         text: "打包报错 JavaScript heap out of memory",
-        link: "bugs/vite/question/01JavaScriptHeapOutOfMemory",
+        link: "/bugs/vite/question/01JavaScriptHeapOutOfMemory",
       },
       {
         text: "打包报错 ENOENT: no such file or directory, scandir xxxxx",
-        link: "bugs/vite/question/02NoSuchFileOrDirectoryScandir",
+        link: "/bugs/vite/question/02NoSuchFileOrDirectoryScandir",
       },
       {
         text: "打包报错 [vite]: Rollup failed to resolve import xxxxx",
-        link: "bugs/vite/question/03RollupFailedToResolveImport",
+        link: "/bugs/vite/question/03RollupFailedToResolveImport",
       },
       {
         text: "使用了CommonJS模块该如何处理",
-        link: "bugs/vite/question/04使用了CommonJS模块该如何处理",
+        link: "/bugs/vite/question/04使用了CommonJS模块该如何处理",
       },
     ],
   },
@@ -87,7 +87,7 @@ const bugs = [
     items: [
       {
         text: "Vue3 项目启动报错isFunction is not a function",
-        link: "bugs/vue/question/1",
+        link: "/bugs/vue/question/1",
       },
     ],
   },

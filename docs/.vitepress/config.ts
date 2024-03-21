@@ -17,7 +17,7 @@ const config: UserConfig = {
     logo: "/logo.png",
     footer: {
       message: "Released under the MIT License.",
-      copyright: "Copyright © 2023-present yuzhiyong",
+      copyright: "Copyright © 2022-present yuzhiyong",
     },
     search: {
       provider: "local",

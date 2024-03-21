@@ -72,28 +72,6 @@ const skills = [
       },
     ],
   },
-  {
-    text: "OPL",
-    collapsible: true,
-    collapsed: false,
-    items: [
-      {
-        text: "参数归一化",
-        link: "skills/opl/参数归一化.md",
-      },
-    ],
-  },
-  {
-    text: "Vite",
-    collapsible: true,
-    collapsed: false,
-    items: [
-      {
-        text: "处理自定义环境变量",
-        link: "skills/opl/参数归一化.md",
-      },
-    ],
-  },
 ]
 export default skills
 
