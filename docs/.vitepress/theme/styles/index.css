@@ -72,12 +72,14 @@ html.dark {
 ::-webkit-scrollbar {
     width: 6px;
     background: transparent;
-    /* 这里设置成透明 */
+    transition: all ease .3s;
 }
 
 /* 仅在悬浮时显示滚动条 */
 ::-webkit-scrollbar:hover {
-    width: 12px;
+    width: 6px;
+    background: rgba(0, 0, 0, 0.1);
+    transition: all ease .3s;
 }
 
 /* 滚动条轨道无需特别设置，使用默认隐藏状态即可 */
@@ -87,7 +89,8 @@ html.dark {
 
 /* 滚动条滑块 */
 ::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.1);
+    /* background: rgba(0, 0, 0, 0.1); */
+    background: rgba(0, 0, 0, 0);
     /* 默认隐藏滑块 */
     border-radius: 6px;
 }

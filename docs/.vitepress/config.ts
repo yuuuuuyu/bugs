@@ -9,8 +9,9 @@ const config: UserConfig = {
   base: "/bugs",
   outDir: "../dist/bugs",
   build: {
-    minify: false,
+    minify: true,
   },
+  head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   themeConfig: {
     nav,
     sidebar,
