@@ -8,6 +8,10 @@ const blogs = [
         text: "2月",
         items: [
           {
+            text: "04Git版本回退",
+            link: "/博客/2024/04Git版本回退",
+          },
+          {
             text: "03Vue调试工具devtools",
             link: "/博客/2024/03Vue调试工具devtools",
           },

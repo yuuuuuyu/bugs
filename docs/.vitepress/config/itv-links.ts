@@ -52,17 +52,6 @@ const 笔记 = [
     ],
   },
 
-  {
-    text: "Git日常使用",
-    collapsible: true,
-    collapsed: false,
-    items: [
-      {
-        text: "版本回退的方式",
-        link: "/笔记/git/01版本回退",
-      },
-    ],
-  },
   //   {
   //     text: "TypeScript",
   //     collapsible: true,
