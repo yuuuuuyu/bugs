@@ -11,7 +11,7 @@ const config: UserConfig = {
   build: {
     minify: true,
   },
-  head: [["link", { rel: "icon", href: "/favicon.ico" }]],
+  head: [["link", { rel: "icon", href: "/bugs/favicon.ico" }]],
   themeConfig: {
     nav,
     sidebar,
