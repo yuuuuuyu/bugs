@@ -1,5 +1,14 @@
 # 重写组件事件时使用emit
 
+
+:::tip
+- 在 Vue 3 中，defineEmits 是 Composition API 的一部分，用于在`script setup`标记中声明组件可以触发的事件。这样做可以让 TypeScript 知道哪些事件是可以被触发的，并且提供适当的类型提示
+- 
+- 在使用`script setup`时，***尽量遵循 Composition API 的范式***，直接使用 defineEmits 来定义和触发事件。
+- 
+- 如果项目在搭建时使用了`vue-class-component`或者`vue-property-decorator`库，则可以使用`this.$emit`或者`@Emit`(暂无示例代码)
+:::
+
 ## 功能概述
 重写BtTableEx组件的行点击事件时，需要emit出去一个事件。（以及类似场景在class内重写事件，并在事件内进行emit，均可使用当前方案解决）
 
@@ -43,7 +52,7 @@ const ctx = new ListLedgerContext(inject('ctx'), getCurrentInstance(), emits)
 provide('ctx', ctx)
 defineExpose(ctx.getExpose())
 console.log(BTCmpt)
-</script>
+</>
 ```
 
 ```ts
