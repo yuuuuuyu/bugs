@@ -13,11 +13,16 @@ const config: UserConfig = {
   },
   head: [["link", { rel: "icon", href: "/bugs/favicon.ico" }]],
   themeConfig: {
+    // https://vitepress.dev/reference/default-theme-config
+    outline: [2, 4],
+    outlineTitle: "大纲",
+    lastUpdatedText: "最近更新时间",
     nav,
     sidebar,
     logo: "/logo.png",
     footer: {
-      message: "Released under the MIT License.",
+      message:
+        '<a href="https://gitee.com/yuuuuuyu/bugs" target="_blank">网站已开源，欢迎star</a>',
       copyright: "Copyright © 2022-present yuzhiyong",
     },
     search: {
@@ -42,6 +47,10 @@ const config: UserConfig = {
           },
         },
       },
+    },
+    editLink: {
+      pattern: "https://gitee.com/yuuuuuyu/bugs/blob/develop/docs/:path",
+      text: "在Gitee上编辑此页",
     },
   },
 

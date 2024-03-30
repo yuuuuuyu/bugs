@@ -22,16 +22,20 @@
     "author": "yuzhiyong",
     "license": "ISC",
     "devDependencies": {
+        "blueimp-md5": "^2.19.0",
         "markdown-it-task-lists": "^2.1.1",
         "puppeteer": "^21.5.1",
         "sass": "^1.72.0",
         "vitepress": "^1.0.0-beta.1"
     },
     "dependencies": {
+        "@algolia/client-search": "^4.23.2",
         "@element-plus/icons-vue": "^2.1.0",
         "@types/node": "^20.9.0",
         "driver.js": "^1.2.1",
         "element-plus": "^2.3.5",
-        "vitepress-theme-demoblock": "^2.0.2"
+        "search-insights": "^2.13.0",
+        "vitepress-theme-demoblock": "^2.0.2",
+        "vue": "^3.4.21"
     }
 }
