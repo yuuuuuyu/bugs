@@ -31,9 +31,8 @@ async function share() {
     const path = window.location.pathname.slice(5)
     const key = decodeURI(path).split(".html")[0]
     const shortUrl = long2short[key]
-    console.log(shortUrl)
 
-    copyText(`${window.location.host}/bugs/s?u=${shortUrl}`)
+    copyText(`${window.location.host}/bugs/s.html?u=${shortUrl}`)
     btnText.value = "复制成功√"
     timer = setTimeout(() => {
       btnText.value = "复制短链接"
@@ -74,7 +73,7 @@ watch(
   background-image: linear-gradient(#212121, #212121),
     linear-gradient(
       137.48deg,
-      #ffdb3b 10%,
+      #ffdb3b 20%,
       #fe53bb 45%,
       #8f51ea 67%,
       #0044ff 87%
@@ -122,7 +121,7 @@ strong {
 }
 
 .circle:nth-of-type(2) {
-  background: rgba(142, 81, 234, 0.704);
+  background: rgba(142, 81, 234, 0.804);
 }
 
 .btn:hover #container-stars {

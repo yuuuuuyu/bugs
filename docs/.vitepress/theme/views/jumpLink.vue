@@ -12,6 +12,7 @@ import { short2long } from "../utils/shortUrl"
 
 onMounted(() => {
   const shortUrl = getQueryParam("u")
+
   if (!shortUrl) return
   setTimeout(() => {
     window.location.href = short2long[shortUrl]
