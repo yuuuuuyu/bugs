@@ -16,7 +16,13 @@ const config: UserConfig = {
     // https://vitepress.dev/reference/default-theme-config
     outline: [2, 4],
     outlineTitle: "大纲",
-    lastUpdatedText: "最近更新时间",
+    lastUpdated: {
+      text: "最近更新时间",
+      formatOptions: {
+        dateStyle: "full",
+        timeStyle: "medium",
+      },
+    },
     nav,
     sidebar,
     logo: "/logo.png",

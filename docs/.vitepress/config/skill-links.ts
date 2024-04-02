@@ -38,6 +38,51 @@ const skills = [
       },
     ],
   },
+  {
+    text: "Beeboat新功能使用说明",
+    collapsible: true,
+    collapsed: false,
+    items: [
+      {
+        text: "弹窗组件",
+        collapsible: true,
+        collapsed: false,
+        items: [
+          {
+            text: "新增的弹窗组件如何使用",
+            link: "/技巧/使用说明/01弹窗组件的使用",
+          },
+        ],
+      },
+      {
+        text: "如何配置带入参的数据源",
+        collapsible: true,
+        collapsed: false,
+        items: [
+          {
+            text: "表格的数据源改造",
+            link: "/技巧/beeboat/06Vue文件中监听Class中的变量",
+          },
+          {
+            text: "表单的数据源改造",
+            link: "/技巧/beeboat/06Vue文件中监听Class中的变量",
+          },
+          {
+            text: "下拉框的数据源改造",
+            link: "/技巧/beeboat/06Vue文件中监听Class中的变量",
+          },
+          {
+            text: "下拉树的数据源改造",
+            link: "/技巧/beeboat/06Vue文件中监听Class中的变量",
+          },
+          {
+            text: "树的数据源改造",
+            link: "/技巧/beeboat/06Vue文件中监听Class中的变量",
+          },
+        ],
+      },
+    ],
+  },
 ]
 export default skills
 
