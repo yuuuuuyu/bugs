@@ -61,23 +61,23 @@ const skills = [
         items: [
           {
             text: "表格的数据源改造",
-            link: "/技巧/beeboat/06Vue文件中监听Class中的变量",
+            link: "/技巧/使用说明/02表格的数据源改造",
           },
           {
             text: "表单的数据源改造",
-            link: "/技巧/beeboat/06Vue文件中监听Class中的变量",
+            link: "/技巧/使用说明/03表单的数据源改造",
           },
           {
             text: "下拉框的数据源改造",
-            link: "/技巧/beeboat/06Vue文件中监听Class中的变量",
+            link: "/技巧/使用说明/04下拉框的数据源改造",
           },
           {
             text: "下拉树的数据源改造",
-            link: "/技巧/beeboat/06Vue文件中监听Class中的变量",
+            link: "/技巧/使用说明/05下拉树的数据源改造",
           },
           {
             text: "树的数据源改造",
-            link: "/技巧/beeboat/06Vue文件中监听Class中的变量",
+            link: "/技巧/使用说明/06树的数据源改造",
           },
         ],
       },

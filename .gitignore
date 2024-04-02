@@ -4,6 +4,7 @@ scripts/docsearch-scraper
 docs/.vitepress/cache
 deploy.sh
 auto-publish.js
+pnpm-lock.yaml
 
 # local env files
 .env.local
