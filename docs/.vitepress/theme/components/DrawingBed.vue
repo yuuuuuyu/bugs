@@ -1,5 +1,6 @@
 <template>
   <el-image
+    style="width: 100%"
     :src="fullUrl"
     :zoom-rate="1.2"
     :max-scale="7"
@@ -26,4 +27,9 @@ const fullUrl = computed(() => {
   return `${prefix}${props.src}`
 })
 </script>
+<style lang="scss">
+.el-image__error {
+  padding: 50px;
+}
+</style>
 
