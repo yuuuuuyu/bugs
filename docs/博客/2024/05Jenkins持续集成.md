@@ -62,6 +62,5 @@ CI/CD是两个独立过程的组合：持续集成和持续部署.
    # 管理员密码
    cat /var/lib/jenkins/secrets/initialAdminPassword
    ```
-
 <drawing-bed src="20240403/1.png" alt="20240403/1.png"/>
 
