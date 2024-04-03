@@ -5,6 +5,15 @@ const blogs = [
     collapsed: false,
     items: [
       {
+        text: "4月",
+        items: [
+          {
+            text: "05Jenkins持续集成",
+            link: "/博客/2024/05Jenkins持续集成",
+          },
+        ],
+      },
+      {
         text: "2月",
         items: [
           {
