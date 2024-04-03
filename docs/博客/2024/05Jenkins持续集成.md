@@ -65,8 +65,3 @@ CI/CD是两个独立过程的组合：持续集成和持续部署.
 
 <drawing-bed src="20240403/1.png" alt="20240403/1.png"/>
 
-7. 安装maven
-   ```bash
-   apt install maven
-   mvn -version
-   ```
