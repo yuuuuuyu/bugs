@@ -23,7 +23,7 @@ const props = defineProps({
 })
 
 const fullUrl = computed(() => {
-  const prefix = "https://yuuuuuyu.gitee.io/drawing-bed/"
+  const prefix = "https://ebugs.l2.ttut.cc/drawing-bed/"
   return `${prefix}${props.src}`
 })
 </script>
