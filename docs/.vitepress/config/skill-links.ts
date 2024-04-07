@@ -5,6 +5,10 @@ const skills = [
     collapsed: false,
     items: [
       {
+        text: "async/await在蜂舟上妙用",
+        link: "/技巧/beeboat/07await在蜂舟上妙用",
+      },
+      {
         text: "Vue文件中监听Class中的变量",
         link: "/技巧/beeboat/06Vue文件中监听Class中的变量",
       },
