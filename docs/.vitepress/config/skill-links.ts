@@ -48,7 +48,7 @@ const skills = [
     collapsed: false,
     items: [
       {
-        text: "弹窗组件",
+        text: "新组件",
         collapsible: true,
         collapsed: false,
         items: [
@@ -82,6 +82,17 @@ const skills = [
           {
             text: "树的数据源改造",
             link: "/技巧/使用说明/06树的数据源改造",
+          },
+        ],
+      },
+      {
+        text: "业务场景demo",
+        collapsible: true,
+        collapsed: false,
+        items: [
+          {
+            text: "左树右表的逻辑事件",
+            link: "/技巧/使用说明/07左树右表的逻辑事件",
           },
         ],
       },
