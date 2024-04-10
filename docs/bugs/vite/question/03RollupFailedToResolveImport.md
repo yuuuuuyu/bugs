@@ -23,6 +23,9 @@ Build step 'Execute shell' marked build as failure
 Finished: FAILURE
 ```
 ## 产生原因
+:::warning
+当前解决方案可能不适用，会引起副作用，谨慎使用
+:::
 <!-- 项目引用直接依赖或深层依赖使用了CommonJs方式导致。
 
 log中提示的`@antv/g-webgpu`没有在项目中直接引用，恰好时刚更新没多久的新包
