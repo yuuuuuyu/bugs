@@ -91,8 +91,8 @@ const skills = [
         collapsed: false,
         items: [
           {
-            text: "左树右表的逻辑事件",
-            link: "/技巧/使用说明/07左树右表的逻辑事件",
+            text: "左右联动的逻辑事件",
+            link: "/技巧/使用说明/07左右联动的逻辑事件",
           },
         ],
       },
