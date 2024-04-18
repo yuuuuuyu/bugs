@@ -59,6 +59,17 @@ const skills = [
         ],
       },
       {
+        text: "后端逻辑编排",
+        collapsible: true,
+        collapsed: false,
+        items: [
+          {
+            text: "后端逻辑编排",
+            link: "/技巧/使用说明/10后端逻辑编排",
+          },
+        ],
+      },
+      {
         text: "如何配置带入参的数据源",
         collapsible: true,
         collapsed: false,
