@@ -13,6 +13,8 @@
 2. 使用microapp
 3. 功能内使用了popover无效
    
+<drawing-bed src="20240428/1.png" alt="20240428/1.png"/>
+
 ### 解决方案
 
 在`main.ts`内加入以下代码：
