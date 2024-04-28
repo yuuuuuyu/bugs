@@ -3,6 +3,9 @@
 ---
 # 博客
 
+> TODO
+>  
+
 ## 关于我
 
 print("hello world")
@@ -14,6 +17,8 @@ print("hello world")
 🏋️(fit)，前撸铁狂热爱好者。后来慢慢废废，但是！近期准备重整旗鼓！
 
 技术栈：JavaScript、Vue.js、Vitepress、Vite、TypeScript
+![Custom Badge](https://img.shields.io/badge/vue-3-red)
+
 
 ## 简介
 
