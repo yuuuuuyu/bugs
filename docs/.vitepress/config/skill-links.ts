@@ -70,6 +70,17 @@ const skills = [
         ],
       },
       {
+        text: "前端逻辑编排",
+        collapsible: true,
+        collapsed: false,
+        items: [
+          {
+            text: "前端逻辑编排-模板",
+            link: "/技巧/使用说明/12前端逻辑编排模板的使用",
+          },
+        ],
+      },
+      {
         text: "如何配置带入参的数据源",
         collapsible: true,
         collapsed: false,
