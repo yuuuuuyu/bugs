@@ -8,6 +8,10 @@ const blogs = [
         text: "4月",
         items: [
           {
+            text: "06解决Firefox浏览器popover组件兼容性问题",
+            link: "/博客/2024/06解决Firefox浏览器popover组件兼容性问题",
+          },
+          {
             text: "05Jenkins持续集成",
             link: "/博客/2024/05Jenkins持续集成",
           },
