@@ -5,6 +5,10 @@ const 笔记 = [
     collapsed: false,
     items: [
       {
+        text: "组合式函数",
+        link: "/笔记/vue/04组合式函数",
+      },
+      {
         text: "Vue2和Vue3的区别",
         link: "/笔记/vue/03Vue2和Vue3的区别",
       },
