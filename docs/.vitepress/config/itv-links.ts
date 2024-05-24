@@ -5,6 +5,10 @@ const 笔记 = [
     collapsed: false,
     items: [
       {
+        text: "Vue3中ref和reactive的区别",
+        link: "/笔记/vue/05Vue3中ref和reactive的区别",
+      },
+      {
         text: "组合式函数",
         link: "/笔记/vue/04组合式函数",
       },
@@ -17,8 +21,8 @@ const 笔记 = [
         link: "/笔记/vue/02Vue2不能监听数组下标的原因",
       },
       {
-        text: "Vue的Diff算法",
-        link: "/笔记/vue/01Vue的Diff算法",
+        text: "Vue3的Diff算法",
+        link: "/笔记/vue/01Vue3的diff算法",
       },
     ],
   },
