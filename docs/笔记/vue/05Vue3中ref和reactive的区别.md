@@ -1,16 +1,18 @@
 # Vue3中ref和reactive的区别
 
+:::tip
+https://vuejs.org/api/reactivity-core.html#ref
+
+https://vuejs.org/api/reactivity-core.html#ref
+:::
+
 ### 区别说明
 - **ref** 生成响应式对象，一般用于基础类型
 - **reactive** 代理整个对象，一般用于引用类型
   
 ### 源码分析
 
-:::tip
-https://vuejs.org/api/reactivity-core.html#ref
-
-https://vuejs.org/api/reactivity-core.html#ref
-:::
+<br>
 
 #### ref
 [源码路径 vue3/packages/reactivity/src/ref.ts](https://github.com/vuejs/core/blob/main/packages/reactivity/src/ref.ts)
