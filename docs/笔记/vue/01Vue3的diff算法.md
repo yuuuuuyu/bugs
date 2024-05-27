@@ -122,8 +122,8 @@ const patchChildren: PatchChildrenFn = (
 // vue3的快速diff体现在 patchKeyedChildren 中
 // 分为五步：预处理前置节点、预处理后置节点、仅新增节点、仅卸载节点、处理其他情况(新增/移动/卸载)
 const patchKeyedChildren = (
-    c1: VNode[],
-    c2: VNodeArrayChildren,
+    c1: VNode[],  // oldNode    
+    c2: VNodeArrayChildren, // newNode
     container: RendererElement,
     parentAnchor: RendererNode | null,
     parentComponent: ComponentInternalInstance | null,
@@ -134,8 +134,8 @@ const patchKeyedChildren = (
   ) => {
     let i = 0
     const l2 = c2.length
-    let e1 = c1.length - 1 // prev ending index
-    let e2 = l2 - 1 // next ending index
+    let e1 = c1.length - 1 // 旧节点结束索引
+    let e2 = l2 - 1 // 新节点结束索引
 
     // 1. sync from start 预处理前置节点
     // (a b) c
@@ -311,6 +311,14 @@ const patchKeyedChildren = (
 ```
 
 ### 图形展示
-:::warning
-TODO
+:::tip
+图形展示可以结合源码理解。
+
+[diff比较长图](https://ebugs.l2.ttut.cc/drawing-bed/20240527/0.jpg)
 :::
+<drawing-bed src="20240527/1.png" alt="20240527/1.png"/>
+<drawing-bed src="20240527/2.png" alt="20240527/1.png"/>
+<drawing-bed src="20240527/3.png" alt="20240527/1.png"/>
+<drawing-bed src="20240527/4.png" alt="20240527/1.png"/>
+<drawing-bed src="20240527/5.png" alt="20240527/1.png"/>
+<drawing-bed src="20240527/6.png" alt="20240527/1.png"/>
