@@ -5,12 +5,24 @@ const 笔记 = [
     collapsed: false,
     items: [
       {
-        text: "Vue2和Vue3的区别",
-        link: "/skills/vue3.x/teleport",
+        text: "Vue3中ref和reactive的区别",
+        link: "/笔记/vue/05Vue3中ref和reactive的区别",
       },
       {
-        text: "Vue的Diff算法",
-        link: "/skills/vue3.x/teleport",
+        text: "组合式函数",
+        link: "/笔记/vue/04组合式函数",
+      },
+      {
+        text: "Vue2和Vue3的区别",
+        link: "/笔记/vue/03Vue2和Vue3的区别",
+      },
+      {
+        text: "Vue2不能监听数组下标的原因",
+        link: "/笔记/vue/02Vue2不能监听数组下标的原因",
+      },
+      {
+        text: "Vue3的Diff算法",
+        link: "/笔记/vue/01Vue3的diff算法",
       },
     ],
   },
