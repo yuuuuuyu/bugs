@@ -18,7 +18,6 @@ import { ref, watch } from "vue"
 import { useRoute } from "vitepress"
 import { long2short } from "../utils/shortUrl"
 import { copyText } from "../utils/copyText"
-import html2pdf from "html2pdf.js"
 
 const route = useRoute()
 
@@ -39,7 +38,8 @@ async function exportDoc() {
       }
       const filename = window.prompt("请输入导出文件的名称:", "")
       if (filename) {
-        html2pdf()
+        window
+          .html2pdf()
           .set(opt)
           .from(element)
           .toPdf()

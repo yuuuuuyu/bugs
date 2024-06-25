@@ -1,7 +1,7 @@
 <template>
   <div class="aside-top-container">
     <share class="share" />
-    <exportDoc />
+    <!-- <exportDoc /> -->
   </div>
 </template>
 <script setup lang="ts">
