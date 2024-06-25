@@ -68,6 +68,12 @@ html.dark {
     color: #fff !important;
 }
 
+.vp-doc summary {
+    padding: 10px 14px;
+    border-radius: 6px;
+    background: #F8FAFB;
+}
+
 /* 默认隐藏滚动条 */
 ::-webkit-scrollbar {
     width: 6px;
