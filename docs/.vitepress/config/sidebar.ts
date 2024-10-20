@@ -1,20 +1,21 @@
-import bugs from "./bug-links"
-import skills from "./skill-links"
-import itvs from "./itv-links"
-import blogs from "./blogs-links"
+import { bugs, skills, notes } from "./links"
+import posts from "./posts-links"
+
+import { data as notes } from "./notes.data.mts"
+console.log(notes)
 
 export enum MY_TAB {
-  BLOG = "/博客/",
-  NOTE = "/笔记/",
-  SKILL = "/技巧/",
+  BLOG = "/posts/",
+  NOTE = "/notes/",
+  SKILL = "/skills/",
   BUGS = "/bugs/",
 }
 
 const sidebar = {
   "/bugs": bugs,
-  "/技巧": skills,
-  "/笔记": itvs,
-  "/博客": blogs,
+  "/skills": skills,
+  "/notes": notes,
+  "/posts": posts,
   "/": [],
 }
 export default sidebar

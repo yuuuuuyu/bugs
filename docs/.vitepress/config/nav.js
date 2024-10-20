@@ -15,23 +15,23 @@ const nav = [
             },
             {
                 "text": "技巧",
-                "link": "/技巧/",
+                "link": "/skills/",
                 "target": "_self",
-                "activeMatch": '/技巧/'
+                "activeMatch": '/skills/'
             },
         ],
     },
     {
         "text": "笔记",
-        "link": "/笔记/",
+        "link": "/notes/",
         "target": "_self",
-        "activeMatch": '/笔记/',
+        "activeMatch": '/notes/',
     },
     {
         "text": "博客",
-        "link": "/博客/",
+        "link": "/posts/",
         "target": "_self",
-        "activeMatch": '/博客/',
+        "activeMatch": '/posts/',
     },
     {
         "text": "Gitee",
