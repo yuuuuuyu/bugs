@@ -18,8 +18,6 @@ export declare const data: Post[]
 export default createContentLoader("notes/**/*.md", {
   excerpt: excerptFn,
   transform(raw): Post[] {
-    console.log(raw, "raw....")
-
     return raw
       .map(({ url, frontmatter, excerpt }) => ({
         title: frontmatter.title,
