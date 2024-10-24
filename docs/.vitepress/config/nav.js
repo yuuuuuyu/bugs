@@ -1,8 +1,24 @@
 const nav = [
     {
-        "text": "首页",
+        "text": "博客",
         "link": "/",
         "target": "_self"
+    },
+    {
+        "text": "归档",
+        "link": "/archived",
+        "target": "_self"
+    },
+    {
+        "text": "笔记",
+        "link": "/notes/",
+        "target": "_self",
+        "activeMatch": '/notes/',
+    },
+    {
+        "text": "工具",
+        "link": "/tools",
+        "target": "_self",
     },
     {
         "text": "蜂舟平台",
@@ -20,23 +36,6 @@ const nav = [
                 "activeMatch": '/skills/'
             },
         ],
-    },
-    {
-        "text": "笔记",
-        "link": "/notes/",
-        "target": "_self",
-        "activeMatch": '/notes/',
-    },
-    {
-        "text": "博客",
-        "link": "/posts/",
-        "target": "_self",
-        "activeMatch": '/posts/',
-    },
-    {
-        "text": "Gitee",
-        "link": "https://gitee.com/yuuuuuyu",
-        "target": "_blank"
     },
 ]
 export default nav

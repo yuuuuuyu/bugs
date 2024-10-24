@@ -15,7 +15,7 @@ const config: UserConfig = {
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     outline: [2, 4],
-    outlineTitle: "大纲",
+    outlineTitle: "当前页面",
     lastUpdated: {
       text: "最近更新时间",
       formatOptions: {

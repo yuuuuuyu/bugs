@@ -10,27 +10,29 @@ isNoBackBtn: true
 <!-- 之所以将代码写在 md 里面，而非单独封装为 Vue 组件，因为 aside 不会动态刷新，参考 https://github.com/vuejs/vitepress/issues/2686 -->
 <template v-for="post in curPosts" :key="post.url">
   <h2 :id="post.title" class="post-title">
-    <a :href="post.url">{{ post.text }}</a>
+    <a :href="post.url">{{ post.title }}</a>
     <a
       class="header-anchor"
-      :href="`#${post.text}`"
-      :aria-label="`Permalink to &quot;${post.text}&quot;`"
+      :href="`#${post.title}`"
+      :aria-label="`Permalink to &quot;${post.title}&quot;`"
       >​</a
     >
-    <div class="post-date hollow-text">{{ post.text.string }}</div>
+    <div class="post-date hollow-text">{{ post.date?.string }}</div>
   </h2>
-  <t-tag
-    v-for="tag in post.tags"
-    class="mr-2"
-    variant="outline"
-    shape="round"
-    >{{ tag }}</t-tag
-  >
+    <el-tag
+        class="mr-4"
+        v-for="tag in post.tags"
+        :key="tag"
+        type="primary"
+        effect="light"
+        round
+    >
+        {{ tag }}
+    </el-tag>
   <div v-if="post.excerpt" v-html="post.excerpt"></div>
 </template>
 
 <div class="pagination-container">
-213
   <!-- <t-pagination
     v-model="current"
     v-model:pageSize="pageSize"
@@ -45,7 +47,6 @@ isNoBackBtn: true
 
 <script lang="ts" setup>
     import { ref, computed, onMounted } from "vue";
-    import blogs from "./.vitepress/config/posts-links.ts";
     import { isMobile as checkIsMobile } from "./.vitepress/theme/utils/mobile.ts";
     
     import { data as posts } from "./.vitepress/config/posts.data.mts";
@@ -55,15 +56,15 @@ isNoBackBtn: true
     const isMobile = ref(false);
     const current = ref(1);
     const pageSize = ref(10);
-    const total = ref(blogs.length);
+    const total = ref(posts.length);
 
     const curPosts = computed(() => {
-        return blogs.slice(
+        return posts.slice(
             (current.value - 1) * pageSize.value,
             current.value * pageSize.value
         );
     });
-    console.log(blogs)
+    console.log(curPosts)
 </script>
 
 <style lang="scss" scoped>
@@ -76,8 +77,9 @@ isNoBackBtn: true
 	}
 }
 
-.mr-2 {
-	margin-right: 2px;
+.mr-4 {
+	margin-right: 4px;
+    color: var(--vp-c-brand-1);
 }
 
 .post-title {

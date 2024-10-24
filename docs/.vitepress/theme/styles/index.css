@@ -36,7 +36,27 @@ html.dark {
     list-style: none;
 }
 
-/* 左侧导航单行显示 */
+/* 存在sidebar的title */
+@media (min-width: 960px) {
+    .VPNavBarTitle.has-sidebar span {
+        color: #fff;
+    }
+}
+
+/* 重写sidebar */
+.VPSidebar {
+    background: var(--vp-c-brand-1) !important;
+}
+
+.VPSidebar .curtain {
+    background: var(--vp-c-brand-1) !important;
+}
+
+.VPSidebarItem .text,
+.VPSidebarItem .caret {
+    color: #fff !important;
+}
+
 .VPSidebar .items p {
     display: inline-block;
     width: calc(var(--vp-sidebar-width) - 100px);
@@ -56,22 +76,39 @@ html.dark {
 }
 
 .VPSidebar .items p:hover {
-    background-color: rgba(52, 81, 178, .2);
-    color: rgba(52, 81, 178, 1) !important;
+    background-color: rgba(255, 255, 255, .2);
 }
 
 .VPSidebarItem.is-active.has-active {
-    background-color: rgba(52, 81, 178, .8);
+    background-color: #fff;
 }
 
 .VPSidebarItem.is-active>.item .link>.text {
-    color: #fff !important;
+    color: rgba(52, 81, 178, 1) !important;
 }
 
 .vp-doc summary {
     padding: 10px 14px;
     border-radius: 6px;
     background: #F8FAFB;
+}
+
+
+/* 切换暗黑 */
+.VPSwitch {
+    width: 22px !important;
+}
+
+.dark .VPSidebar {
+    background-color: #000 !important;
+}
+
+.dark .VPSidebar .curtain {
+    background: #000 !important;
+}
+
+.dark .VPSwitchAppearance .check {
+    transform: translateX(0) !important;
 }
 
 /* 默认隐藏滚动条 */
@@ -81,27 +118,21 @@ html.dark {
     transition: all ease .3s;
 }
 
-/* 仅在悬浮时显示滚动条 */
 ::-webkit-scrollbar:hover {
     width: 6px;
     background: rgba(0, 0, 0, 0.1);
     transition: all ease .3s;
 }
 
-/* 滚动条轨道无需特别设置，使用默认隐藏状态即可 */
 ::-webkit-scrollbar-track:hover {
     background: transparent;
 }
 
-/* 滚动条滑块 */
 ::-webkit-scrollbar-thumb {
-    /* background: rgba(0, 0, 0, 0.1); */
     background: rgba(0, 0, 0, 0);
-    /* 默认隐藏滑块 */
     border-radius: 6px;
 }
 
-/* 鼠标悬浮时滑块的样式 */
 ::-webkit-scrollbar-thumb:hover {
     background: rgba(0, 0, 0, 0.4);
 }

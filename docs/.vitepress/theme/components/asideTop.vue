@@ -1,10 +1,11 @@
 <template>
   <div class="aside-top-container">
-    <share class="share" />
+    <ButtonGroup class="share" />
     <!-- <exportDoc /> -->
   </div>
 </template>
 <script setup lang="ts">
+import ButtonGroup from "./ButtonGroup.vue"
 import share from "./share.vue"
 import exportDoc from "./exportDoc.vue"
 </script>
