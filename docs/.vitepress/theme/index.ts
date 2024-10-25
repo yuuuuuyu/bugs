@@ -7,6 +7,7 @@ import { useComponents } from "./useComponents"
 import "vitepress-theme-demoblock/dist/theme/styles/index.css"
 import "element-plus/dist/index.css"
 import "./styles/index.css"
+import "./iconfont/iconfont.css"
 
 // 自定义组件
 import AsideTop from "./components/AsideTop.vue"

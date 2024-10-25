@@ -2,25 +2,40 @@
   <div class="button-group">
     <el-button
       v-if="isPosts && !frontmatter.isNoBackBtn"
-      theme="default"
-      variant="dashed"
-      style="margin-bottom: 10px"
+      plain
+      color="#3451b2"
       @click="goBack"
+      @mouseenter="onMouseEnter('back')"
+      @mouseleave="onMouseLeave('back')"
+      :class="{ 'is-hover': backIsHover }"
     >
-      <template #icon><RollbackIcon /></template>
-      {{ isEN ? "Go back " : "返回上一页" }}
+      <span
+        class="iconfont"
+        :class="{
+          'icon-fanhui1': !backIsHover,
+          'icon-fanhui1-copy': backIsHover,
+        }"
+      ></span>
+      <span class="btn-txt" v-if="backIsHover">返回上一页</span>
     </el-button>
     <el-button
+      plain
+      color="#3451b2"
       v-if="!frontmatter.isNoBackBtn"
-      theme="primary"
-      style="margin-bottom: 10px"
       @click="copyLink"
+      @mouseenter="onMouseEnter('copy')"
+      @mouseleave="onMouseLeave('copy')"
+      :class="{ 'is-hover': copyIsHover }"
     >
-      <template #icon>
-        <CopyIcon v-if="!isCopySuccess" />
-        <CheckIcon v-else />
-      </template>
-      {{ btnText }}
+      <span
+        class="iconfont"
+        :class="{
+          'icon-fuzhi2': !copyIsHover && !isCopySuccess,
+          'icon-fuzhi2-copy': copyIsHover && !isCopySuccess,
+          'icon-duihao': copyIsHover && isCopySuccess,
+        }"
+      ></span>
+      <span class="btn-txt" v-if="copyIsHover">{{ btnText }}</span>
     </el-button>
   </div>
 </template>
@@ -32,12 +47,22 @@ import { copyText } from "../utils/copyText"
 
 const route = useRoute()
 const isEN = computed(() => route.path.startsWith("/en"))
-const isPosts = computed(
-  () => route.path.startsWith("/posts") || route.path.startsWith("/en/posts")
-)
+const isPosts = computed(() => route.path.startsWith("/bugs/posts"))
 const { frontmatter } = useData()
 
 const isCopySuccess = ref(false)
+
+const backIsHover = ref(false)
+const copyIsHover = ref(false)
+const onMouseEnter = btn => {
+  btn === "back" && (backIsHover.value = true)
+  btn === "copy" && (copyIsHover.value = true)
+}
+const onMouseLeave = btn => {
+  btn === "back" && (backIsHover.value = false)
+  btn === "copy" && (copyIsHover.value = false)
+}
+
 const goBack = () => {
   if (window.history.length <= 1) {
     location.href = "/"
@@ -49,7 +74,7 @@ const goBack = () => {
 
 const btnText = ref("复制短链接")
 let timer: any
-const copyLink = () => {
+const copyLink = event => {
   if (typeof window !== "undefined") {
     clearTimeout(timer)
     const path = window.location.pathname.slice(0)
@@ -77,26 +102,37 @@ onUnmounted(() => {
   window.onhashchange = null
 })
 </script>
-<style scoped>
+<style scoped lang="scss">
 .button-group {
-  display: flex;
-  button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 0 12px;
+
+  :deep(.el-button > span) {
+    width: 100%;
     flex: 1;
-    margin-right: 10px;
-    &:last-child {
-      margin-right: 0;
+  }
+
+  button {
+    transition: width 0.5s ease;
+    width: 32px;
+    position: relative;
+    padding: 8px;
+
+    .iconfont {
+      margin: 0;
+    }
+    &.is-hover {
+      > span {
+        flex: 1;
+      }
+      width: 122px;
+      .btn-txt {
+        width: 72px;
+        padding-left: 8px;
+      }
     }
   }
-}
-.img-container {
-  height: 105px;
-  width: 100px;
-}
-
-img {
-  height: 100px;
-  border-radius: 5px;
-  margin-top: 5px;
 }
 </style>
 
