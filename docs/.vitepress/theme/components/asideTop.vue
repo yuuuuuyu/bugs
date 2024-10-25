@@ -1,13 +1,10 @@
 <template>
   <div class="aside-top-container">
     <ButtonGroup class="share" />
-    <!-- <exportDoc /> -->
   </div>
 </template>
 <script setup lang="ts">
 import ButtonGroup from "./ButtonGroup.vue"
-import share from "./share.vue"
-import exportDoc from "./exportDoc.vue"
 </script>
 <style scoped>
 /* 仅在侧边栏不显示时显示这部分 */

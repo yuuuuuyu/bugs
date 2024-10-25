@@ -1,0 +1,93 @@
+{
+  "id": "4723164",
+  "name": "1024",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5387519",
+      "name": "对号",
+      "font_class": "duihao",
+      "unicode": "eaf1",
+      "unicode_decimal": 60145
+    },
+    {
+      "icon_id": "42237668",
+      "name": "返回-hover",
+      "font_class": "fanhui-copy",
+      "unicode": "e8b1",
+      "unicode_decimal": 59569
+    },
+    {
+      "icon_id": "42237669",
+      "name": "返回-copy",
+      "font_class": "fanhui3-copy",
+      "unicode": "e8b2",
+      "unicode_decimal": 59570
+    },
+    {
+      "icon_id": "42237671",
+      "name": "返回",
+      "font_class": "fanhui1-copy",
+      "unicode": "e8b3",
+      "unicode_decimal": 59571
+    },
+    {
+      "icon_id": "42241137",
+      "name": "复制",
+      "font_class": "fuzhi2-copy",
+      "unicode": "e8b4",
+      "unicode_decimal": 59572
+    },
+    {
+      "icon_id": "2328357",
+      "name": "返回",
+      "font_class": "fanhui",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "6544497",
+      "name": "复制",
+      "font_class": "fuzhi",
+      "unicode": "e6fa",
+      "unicode_decimal": 59130
+    },
+    {
+      "icon_id": "8453559",
+      "name": "返回",
+      "font_class": "fanhui1",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "11372665",
+      "name": "复制",
+      "font_class": "fuzhi1",
+      "unicode": "e8b0",
+      "unicode_decimal": 59568
+    },
+    {
+      "icon_id": "22360892",
+      "name": "返回",
+      "font_class": "fanhui2",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "27253650",
+      "name": "复制",
+      "font_class": "fuzhi2",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "39921191",
+      "name": "返回",
+      "font_class": "fanhui3",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    }
+  ]
+}
