@@ -9,7 +9,7 @@ import "element-plus/dist/index.css"
 import "./styles/index.css"
 
 // 自定义组件
-import asideTop from "./components/asideTop.vue"
+import AsideTop from "./components/AsideTop.vue"
 
 export default {
   ...DefaultTheme,
@@ -18,7 +18,7 @@ export default {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
       //   "doc-after": () => h(comment),
       //   "doc-footer-before": () => h(docFooterBefore),
-      "aside-top": () => h(asideTop),
+      "aside-top": () => h(AsideTop),
       //   "doc-bottom": () => h(imageViewer),
     })
   },
