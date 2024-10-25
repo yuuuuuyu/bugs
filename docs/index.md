@@ -51,7 +51,6 @@ isNoBackBtn: true
     
     import { data as posts } from "./.vitepress/config/posts.data.mts";
     
-    console.log(posts, '=====')
     
     const isMobile = ref(false);
     const current = ref(1);
