@@ -46,14 +46,11 @@ html.dark {
 
 /* 重写sidebar */
 .VPSidebar {
-    /* background: var(--vp-c-brand-1) !important; */
-    background: linear-gradient(90deg, #324d9f 0%, #3c51de 100%);
-    /* background: url("../images/asider-bg.png") center/cover; */
+    background: var(--vp-c-brand-1) !important;
 }
 
 .VPSidebar .curtain {
-    /* background: var(--vp-c-brand-1) !important; */
-    background: transparent;
+    background: var(--vp-c-brand-1) !important;
 }
 
 .VPSidebarItem .text,
