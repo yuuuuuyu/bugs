@@ -23,6 +23,7 @@ isNoBackBtn: true
         class="mr-4"
         v-for="tag in post.tags"
         :key="tag"
+        dark
         type="primary"
         effect="light"
         round

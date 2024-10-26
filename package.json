@@ -32,6 +32,7 @@
     "dependencies": {
         "@algolia/client-search": "^4.23.2",
         "@element-plus/icons-vue": "^2.1.0",
+        "@giscus/vue": "^3.0.0",
         "@types/node": "^20.9.0",
         "driver.js": "^1.2.1",
         "element-plus": "^2.3.5",
