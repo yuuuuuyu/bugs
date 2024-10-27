@@ -1,5 +1,12 @@
-# 奇技淫巧
+---
+layout: doc
+editLink: false
+lastUpdated: false
+isNoBackBtn: false
+---
 
-:::warning
-对于文档外类似的使用方法，积极探索一下，说不定会有意外惊喜。
-:::
+<UrlRedirect prefix="skills" />
+
+<script lang="ts" setup>
+import UrlRedirect from '../.vitepress/theme/components/UrlRedirect.vue'
+</script>

@@ -12,6 +12,7 @@ import "./iconfont/iconfont.css"
 // 自定义组件
 import AsideTop from "./components/AsideTop.vue"
 import comment from "./components/Comment.vue"
+import ImageViewer from "./components/ImageViewer.vue"
 
 export default {
   ...DefaultTheme,
@@ -21,7 +22,7 @@ export default {
       "doc-after": () => h(comment),
       //   "doc-footer-before": () => h(docFooterBefore),
       "aside-top": () => h(AsideTop),
-      //   "doc-bottom": () => h(imageViewer),
+      "doc-bottom": () => h(ImageViewer),
     })
   },
   enhanceApp(ctx) {
