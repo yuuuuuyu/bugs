@@ -1,5 +1,12 @@
-# notes
+---
+layout: doc
+editLink: false
+lastUpdated: false
+isNoBackBtn: false
+---
 
-## TODO
-- 1.this指向问题
-- 2
+<UrlRedirect prefix="notes" />
+
+<script lang="ts" setup>
+import UrlRedirect from '../.vitepress/theme/components/UrlRedirect.vue'
+</script>

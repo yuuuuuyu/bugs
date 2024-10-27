@@ -8,9 +8,9 @@ export enum MY_TAB {
 }
 
 const sidebar = {
-  "/bugs": bugs,
-  "/skills": skills,
-  "/notes": notes,
+  bugs: bugs,
+  skills: skills,
+  notes: notes,
 }
 export default sidebar
 
