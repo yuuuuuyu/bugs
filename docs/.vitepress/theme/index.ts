@@ -7,19 +7,22 @@ import { useComponents } from "./useComponents"
 import "vitepress-theme-demoblock/dist/theme/styles/index.css"
 import "element-plus/dist/index.css"
 import "./styles/index.css"
+import "./iconfont/iconfont.css"
 
 // 自定义组件
-import asideTop from "./components/asideTop.vue"
+import AsideTop from "./components/AsideTop.vue"
+import comment from "./components/Comment.vue"
+import ImageViewer from "./components/ImageViewer.vue"
 
 export default {
   ...DefaultTheme,
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
-      //   "doc-after": () => h(comment),
+      "doc-after": () => h(comment),
       //   "doc-footer-before": () => h(docFooterBefore),
-      "aside-top": () => h(asideTop),
-      //   "doc-bottom": () => h(imageViewer),
+      "aside-top": () => h(AsideTop),
+      "doc-bottom": () => h(ImageViewer),
     })
   },
   enhanceApp(ctx) {

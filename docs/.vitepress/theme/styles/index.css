@@ -11,6 +11,7 @@
     --vp-sidebar-width: 320px;
 }
 
+
 .demo-block .meta {
     background-color: var(--vp-code-block-bg);
 }
@@ -110,6 +111,17 @@ html.dark {
 .dark .VPSwitchAppearance .check {
     transform: translateX(0) !important;
 }
+
+.dark .el-tag {
+    background: transparent;
+    color: #fff;
+}
+
+/* 右侧sidebar */
+.aside-container {
+    width: 300px !important;
+}
+
 
 /* 默认隐藏滚动条 */
 ::-webkit-scrollbar {

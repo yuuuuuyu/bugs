@@ -23,6 +23,7 @@ isNoBackBtn: true
         class="mr-4"
         v-for="tag in post.tags"
         :key="tag"
+        dark
         type="primary"
         effect="light"
         round
@@ -51,7 +52,6 @@ isNoBackBtn: true
     
     import { data as posts } from "./.vitepress/config/posts.data.mts";
     
-    console.log(posts, '=====')
     
     const isMobile = ref(false);
     const current = ref(1);
