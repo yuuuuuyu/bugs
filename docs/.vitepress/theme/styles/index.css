@@ -112,6 +112,11 @@ html.dark {
     transform: translateX(0) !important;
 }
 
+.dark .el-tag {
+    background: transparent;
+    color: #fff;
+}
+
 /* 右侧sidebar */
 .aside-container {
     width: 300px !important;
