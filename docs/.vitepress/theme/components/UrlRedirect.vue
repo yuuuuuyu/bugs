@@ -16,10 +16,7 @@ const route = useRoute()
 
 const { path } = route
 
-console.log(props.prefix)
-
 const firstItemLink = config.base + sidebar[props.prefix][0].items[0].link
-console.log(firstItemLink)
 
 router.go(firstItemLink)
 </script>
