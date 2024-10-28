@@ -6,7 +6,6 @@ lastUpdated: false
 isNoComment: true
 isNoBackBtn: true
 ---
-
 <!-- 之所以将代码写在 md 里面，而非单独封装为 Vue 组件，因为 aside 不会动态刷新，参考 https://github.com/vuejs/vitepress/issues/2686 -->
 <template v-for="post in curPosts" :key="post.url">
   <h2 :id="post.title" class="post-title">
@@ -34,16 +33,6 @@ isNoBackBtn: true
 </template>
 
 <div class="pagination-container">
-  <!-- <t-pagination
-    v-model="current"
-    v-model:pageSize="pageSize"
-    :total="total"
-    size="small"
-    :showPageSize="false"
-    :showPageNumber="!isMobile"
-    :showJumper="isMobile"
-    @current-change="onCurrentChange"
-  /> -->
     <el-config-provider :locale="zhCn">
         <el-pagination
             v-model:current-page="current"
@@ -65,7 +54,7 @@ isNoBackBtn: true
    
     import { isMobile as checkIsMobile } from "./.vitepress/theme/utils/mobile.ts";
     import { data as posts } from "./.vitepress/config/posts.data.mts";
-    
+
     const isMobile = ref(false);
     const current = ref(1);
     const pageSize = ref(10);
@@ -81,7 +70,6 @@ isNoBackBtn: true
     });
 
     const layout = computed(() => {
-        console.log(isMobile.value)
         if (!isMobile.value) {
             return 'total, prev, pager, next'
         } else {
