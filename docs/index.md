@@ -44,27 +44,50 @@ isNoBackBtn: true
     :showJumper="isMobile"
     @current-change="onCurrentChange"
   /> -->
+    <el-config-provider :locale="zhCn">
+        <el-pagination
+            v-model:current-page="current"
+            :page-size="pageSize"
+            size="default"
+            :background="true"
+            :layout="layout"
+            :total="total"
+            @size-change="handleSizeChange"
+            @current-change="handleCurrentChange"
+        />
+    </el-config-provider>
+  
 </div>
 
 <script lang="ts" setup>
     import { ref, computed, onMounted } from "vue";
+    import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
+   
     import { isMobile as checkIsMobile } from "./.vitepress/theme/utils/mobile.ts";
-    
     import { data as posts } from "./.vitepress/config/posts.data.mts";
-    
     
     const isMobile = ref(false);
     const current = ref(1);
     const pageSize = ref(10);
     const total = ref(posts.length);
 
+    isMobile.value = checkIsMobile();
+    
     const curPosts = computed(() => {
         return posts.slice(
             (current.value - 1) * pageSize.value,
             current.value * pageSize.value
         );
     });
-    console.log(curPosts)
+
+    const layout = computed(() => {
+        console.log(isMobile.value)
+        if (!isMobile.value) {
+            return 'total, prev, pager, next'
+        } else {
+            return 'jumper'
+        }
+    })
 </script>
 
 <style lang="scss" scoped>

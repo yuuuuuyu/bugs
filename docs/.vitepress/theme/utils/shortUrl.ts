@@ -3,12 +3,17 @@ import { MY_TAB } from "../../config/sidebar"
 import md5 from "blueimp-md5"
 import config from "../../config"
 
+// 博客数据合并，方便复制短链接
+// 在sidebar中处理博客数据会报错???
+import { data as posts } from "../../config/posts.data.mts"
+
 export interface IShortUrlMap {
   [key: string]: string
 }
 
 export function createShortUrlMap() {
   const allSideBar = sidebar
+  allSideBar.posts = posts
 
   const tabs = Object.keys(allSideBar) as MY_TAB[]
   const long2short: IShortUrlMap = {}
@@ -32,7 +37,6 @@ export function createShortUrlMap() {
   tabs.forEach(tab => {
     findItems(allSideBar[tab])
   })
-  console.log(long2short, short2long)
 
   return [long2short, short2long]
 }
