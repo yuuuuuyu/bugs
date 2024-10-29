@@ -5,6 +5,10 @@ import Markd from "markdown-it-task-lists"
 import nav from "./config/nav"
 import sidebar from "./config/sidebar"
 
+// 奥德彪语录
+// import oldBiao from "./theme/utils/oldBiao"
+// const message = oldBiao[Math.floor(Math.random() * oldBiao.length)]
+
 const config: UserConfig = {
   base: "/bugs",
   outDir: "../dist/bugs",
@@ -28,7 +32,7 @@ const config: UserConfig = {
     sidebar,
     logo: "/logo.png",
     footer: {
-      message: "钱没了可以再赚，但是良心没了能赚的更多",
+      message: "乾坤未定，你我皆是黑马；闹钟一响，你我皆是牛马",
       copyright: "Copyright © 2022-present yuzhiyong",
     },
     search: {
