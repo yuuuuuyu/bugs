@@ -13,7 +13,6 @@ const props = defineProps({
 
 const router = useRouter()
 
-console.log(sidebar[props.prefix])
 const findFirstLink = items => {
   for (const item of items) {
     if (item.link) {
