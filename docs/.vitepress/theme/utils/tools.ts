@@ -84,9 +84,20 @@ export const SITEs = [
     url: "https://appstorrent.ru/",
   },
 ]
-export default {
-  APIs,
-  AIs,
-  SITEs,
-}
+
+const tools = [
+  {
+    type: "APIs",
+    list: APIs,
+  },
+  {
+    type: "AIs",
+    list: AIs,
+  },
+  {
+    type: "SITEs",
+    list: SITEs,
+  },
+]
+export default tools
 
