@@ -50,7 +50,7 @@ const initData = params => {
 }
 const getItems = () => {
   dbService.getAllData("Tools").then(res => {
-    if (!res.length) {
+    if (res && !res.length) {
       // 初始化数据
       data.forEach(i => {
         initData(i)
