@@ -11,6 +11,10 @@
 
 <script setup lang="ts">
 import { onMounted, onUnmounted, reactive, ref } from "vue"
+import { useRoute } from "vitepress"
+
+const route = useRoute()
+const { path } = route
 
 const show = ref(false)
 const previewImageInfo = reactive<{ url: string; list: string[]; idx: number }>(
@@ -51,12 +55,15 @@ function previewImage(e: Event) {
 
 onMounted(() => {
   const docDomContainer = document.querySelector("#VPContent")
-  docDomContainer?.addEventListener("click", previewImage)
+
+  path.includes("posts") &&
+    docDomContainer?.addEventListener("click", previewImage)
 })
 
 onUnmounted(() => {
   const docDomContainer = document.querySelector("#VPContent")
-  docDomContainer?.removeEventListener("click", previewImage)
+  path.includes("posts") &&
+    docDomContainer?.removeEventListener("click", previewImage)
 })
 </script>
 
