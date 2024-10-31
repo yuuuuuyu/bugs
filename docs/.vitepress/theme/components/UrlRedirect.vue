@@ -12,12 +12,28 @@ const props = defineProps({
 })
 
 const router = useRouter()
-const route = useRoute()
 
-const { path } = route
+const findFirstLink = items => {
+  for (const item of items) {
+    if (item.link) {
+      return item.link
+    }
+    if (item.items && item.items.length > 0) {
+      const link = findFirstLink(item.items)
+      if (link) {
+        return link
+      }
+    }
+  }
+  return null
+}
 
-const firstItemLink = config.base + sidebar[props.prefix][0].items[0].link
+const firstItemLink = findFirstLink(sidebar[props.prefix][0].items)
 
-router.go(firstItemLink)
+if (firstItemLink) {
+  router.go(config.base + firstItemLink)
+} else {
+  console.error("No link found in the sidebar")
+}
 </script>
 

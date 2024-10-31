@@ -1,7 +1,12 @@
 const nav = [
     {
-        "text": "博客",
+        "text": "首页",
         "link": "/",
+        "target": "_self",
+    },
+    {
+        "text": "博客",
+        "link": "/blog",
         "target": "_self"
     },
     {
@@ -14,11 +19,6 @@ const nav = [
         "link": "/notes/",
         "target": "_self",
         "activeMatch": '/notes/',
-    },
-    {
-        "text": "工具",
-        "link": "/tools",
-        "target": "_self",
     },
     {
         "text": "蜂舟平台",

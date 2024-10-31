@@ -122,6 +122,18 @@ html.dark {
     width: 300px !important;
 }
 
+/* 分页器 */
+.vp-doc ul.el-pager {
+    padding: 0;
+}
+
+.el-pagination .el-pagination__total {
+    flex: 1 1 auto;
+}
+
+.el-pagination.is-background .el-pager li.is-active {
+    background: var(--vp-c-brand) !important;
+}
 
 /* 默认隐藏滚动条 */
 ::-webkit-scrollbar {

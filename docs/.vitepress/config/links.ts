@@ -193,52 +193,52 @@ export const bugs = [
 
 export const skills = [
   {
-    text: "Beeboat",
+    text: "Beeboat v2.0",
     collapsible: true,
     collapsed: false,
     items: [
       {
         text: "async/await在蜂舟上妙用",
-        link: "/skills/beeboat/07await在蜂舟上妙用",
+        link: "/skills/v2/07await在蜂舟上妙用",
       },
       {
         text: "Vue文件中监听Class中的变量",
-        link: "/skills/beeboat/06Vue文件中监听Class中的变量",
+        link: "/skills/v2/06Vue文件中监听Class中的变量",
       },
       {
         text: "使用代码片段重写表格列",
-        link: "/skills/beeboat/01使用代码片段重写表格列",
+        link: "/skills/v2/01使用代码片段重写表格列",
       },
       {
         text: "使用代码片段实现动态列",
-        link: "/skills/beeboat/02使用代码片段实现动态列",
+        link: "/skills/v2/02使用代码片段实现动态列",
       },
       {
         text: "使用代码片段实现表头合并",
-        link: "/skills/beeboat/03使用代码片段实现表头合并",
+        link: "/skills/v2/03使用代码片段实现表头合并",
       },
       {
         text: "重写组件事件/属性",
-        link: "/skills/beeboat/04重写组件事件",
+        link: "/skills/v2/04重写组件事件",
       },
       {
         text: "重写组件事件使用emit",
-        link: "/skills/beeboat/05重写组件事件使用emit",
+        link: "/skills/v2/05重写组件事件使用emit",
       },
       {
         text: "[逻辑事件系列1] 通过判断行数据指定字段来控制按钮的禁用启用",
-        link: "/skills/beeboat/logic/1",
+        link: "/skills/v2/logic/1",
       },
       {
         text: "[逻辑事件系列2] 通过判断表格多选数据来控制按钮的禁用启用",
-        link: "/skills/beeboat/logic/2",
+        link: "/skills/v2/logic/2",
       },
     ],
   },
   {
-    text: "Beeboat新功能使用说明",
+    text: "Beeboat v3.0",
     collapsible: true,
-    collapsed: false,
+    collapsed: true,
     items: [
       {
         text: "新组件",
@@ -247,7 +247,7 @@ export const skills = [
         items: [
           {
             text: "新增的弹窗组件如何使用",
-            link: "/skills/使用说明/01弹窗组件的使用",
+            link: "/skills/v3/01弹窗组件的使用",
           },
         ],
       },
@@ -258,7 +258,7 @@ export const skills = [
         items: [
           {
             text: "后端逻辑编排",
-            link: "/skills/使用说明/10后端逻辑编排",
+            link: "/skills/v3/10后端逻辑编排",
           },
         ],
       },
@@ -269,11 +269,11 @@ export const skills = [
         items: [
           {
             text: "前端逻辑编排-模板",
-            link: "/skills/使用说明/12前端逻辑编排模板的使用",
+            link: "/skills/v3/12前端逻辑编排模板的使用",
           },
           {
             text: "从pinia中取值",
-            link: "/skills/使用说明/14从pinia中取值",
+            link: "/skills/v3/14从pinia中取值",
           },
         ],
       },
@@ -284,23 +284,23 @@ export const skills = [
         items: [
           {
             text: "表格的数据源改造",
-            link: "/skills/使用说明/02表格的数据源改造",
+            link: "/skills/v3/02表格的数据源改造",
           },
           {
             text: "表单的数据源改造",
-            link: "/skills/使用说明/03表单的数据源改造",
+            link: "/skills/v3/03表单的数据源改造",
           },
           {
             text: "下拉框的数据源改造",
-            link: "/skills/使用说明/04下拉框的数据源改造",
+            link: "/skills/v3/04下拉框的数据源改造",
           },
           {
             text: "下拉树的数据源改造",
-            link: "/skills/使用说明/05下拉树的数据源改造",
+            link: "/skills/v3/05下拉树的数据源改造",
           },
           {
             text: "树的数据源改造",
-            link: "/skills/使用说明/06树的数据源改造",
+            link: "/skills/v3/06树的数据源改造",
           },
         ],
       },
@@ -311,29 +311,40 @@ export const skills = [
         items: [
           {
             text: "左右联动的逻辑事件",
-            link: "/skills/使用说明/07左右联动的逻辑事件",
+            link: "/skills/v3/07左右联动的逻辑事件",
           },
           {
             text: "表单多个下拉级联的逻辑事件",
-            link: "/skills/使用说明/08表单多个下拉级联的逻辑事件",
+            link: "/skills/v3/08表单多个下拉级联的逻辑事件",
           },
           {
             text: "表单form-item中多个表单元素",
-            link: "/skills/使用说明/15form-item组件",
+            link: "/skills/v3/15form-item组件",
           },
           {
             text: "弹窗组件中使用自定义组件",
-            link: "/skills/使用说明/09弹窗组件中使用自定义组件",
+            link: "/skills/v3/09弹窗组件中使用自定义组件",
           },
           {
             text: "表格行内编辑",
-            link: "/skills/使用说明/11行内编辑功能使用",
+            link: "/skills/v3/11行内编辑功能使用",
           },
           {
             text: "表格批量删除&变量进阶",
-            link: "/skills/使用说明/13变量进阶使用",
+            link: "/skills/v3/13变量进阶使用",
           },
         ],
+      },
+    ],
+  },
+  {
+    text: "Beeboat v4.0",
+    collapsible: false,
+    collapsed: false,
+    items: [
+      {
+        text: "demo",
+        link: "/skills/v4/demo",
       },
     ],
   },
