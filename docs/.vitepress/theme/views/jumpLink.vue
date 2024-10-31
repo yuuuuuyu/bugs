@@ -1,7 +1,7 @@
 <template>
   <div class="jump-link-container">
     <div class="center">
-      <img class="loading" src="/loading.gif" alt="" />
+      <img class="loading" src="/searching.gif" alt="" />
       正在跳转中...
     </div>
   </div>
