@@ -5,7 +5,7 @@
         <div class="tools-title">{{ item.type }}</div>
         <div class="tools-list">
           <div class="tools-item" v-for="(i, index) in item.list" :key="index">
-            <div class="tools-item-icon">
+            <div class="tools-item-icon" @click="jump(i)">
               <img :src="prefix + i.icon" alt="" />
             </div>
             <div class="tools-item-title">
@@ -39,10 +39,13 @@ const loading = ref(false)
 const onLoad = () => {
   loading.value = !loading.value
 }
-
 onMounted(() => {
   onLoad()
 })
+
+const jump = item => {
+  window.open(item.url, "_blank")
+}
 
 const items = ref([])
 const dbService = new IndexedDBService("Bugs")
