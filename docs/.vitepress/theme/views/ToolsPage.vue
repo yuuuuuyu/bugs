@@ -21,7 +21,9 @@
         </div>
       </section>
     </div>
-    <div v-else>loading...</div>
+    <div class="loading-container" v-else>
+      <img class="loading" src="/loading.gif" alt="" />
+    </div>
   </el-scrollbar>
 </template>
 
@@ -35,12 +37,10 @@ import IndexedDBService from "../utils/db"
 const prefix = ref("https://ebugs.l2.ttut.cc/drawing-bed/tools-icon/")
 const loading = ref(false)
 const onLoad = () => {
-  console.log(3)
   loading.value = !loading.value
 }
 
 onMounted(() => {
-  console.log(2)
   onLoad()
 })
 
@@ -81,6 +81,16 @@ const test = async () => {
 </script>
 
 <style lang="scss" scoped>
+.loading-container {
+  width: 100%;
+  height: calc(100vh - 64px - 113px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 10%;
+  }
+}
 .tools-container {
   width: 100%;
   height: calc(100vh - 64px - 113px);
