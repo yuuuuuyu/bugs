@@ -1,6 +1,6 @@
 <template>
   <el-scrollbar height="calc(100vh - 64px - 113px)">
-    <div class="tools-container">
+    <div class="tools-container" v-if="loading">
       <section v-for="item in items">
         <div class="tools-title">{{ item.type }}</div>
         <div class="tools-list">
@@ -21,17 +21,29 @@
         </div>
       </section>
     </div>
+    <div v-else>loading...</div>
   </el-scrollbar>
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue"
+import { ref, onBeforeMount, onMounted, onBeforeUnmount } from "vue"
 import { APIs } from "../utils/tools.ts"
 import data from "../utils/tools.ts"
 
 import IndexedDBService from "../utils/db"
 
 const prefix = ref("https://ebugs.l2.ttut.cc/drawing-bed/tools-icon/")
+const loading = ref(false)
+const onLoad = () => {
+  console.log(3)
+  loading.value = !loading.value
+}
+
+onMounted(() => {
+  console.log(2)
+  onLoad()
+})
+
 const items = ref([])
 const dbService = new IndexedDBService("Bugs")
 dbService.openDB(1, "Tools", "type").then(() => {
