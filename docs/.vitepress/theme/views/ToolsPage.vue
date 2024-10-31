@@ -13,11 +13,11 @@
             </div>
           </div>
           <!-- <div class="tools-item" @click="addItem(item.type)">
-            <div class="tools-item-add">
-              <el-icon><Plus /></el-icon>
-            </div>
-            <div class="tools-item-title">添加一个</div>
-          </div> -->
+              <div class="tools-item-add">
+                <el-icon><Plus /></el-icon>
+              </div>
+              <div class="tools-item-title">添加一个</div>
+            </div> -->
         </div>
       </section>
     </div>
