@@ -35,14 +35,12 @@ import data from "../utils/tools.ts"
 import IndexedDBService from "../utils/db"
 
 const prefix = ref("https://ebugs.l2.ttut.cc/drawing-bed/tools-icon/")
-const loading = ref(true)
+const loading = ref(false)
 const onLoad = () => {
-  console.log(3)
   loading.value = !loading.value
 }
 
 onMounted(() => {
-  console.log(2)
   onLoad()
 })
 
