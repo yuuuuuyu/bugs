@@ -1,6 +1,6 @@
 <template>
   <el-scrollbar height="calc(100vh - 64px - 113px)">
-    <div class="tools-container">
+    <div class="tools-container" v-if="loading">
       <section v-for="item in items">
         <div class="tools-title">{{ item.type }}</div>
         <div class="tools-list">
@@ -13,25 +13,37 @@
             </div>
           </div>
           <!-- <div class="tools-item" @click="addItem(item.type)">
-            <div class="tools-item-add">
-              <el-icon><Plus /></el-icon>
-            </div>
-            <div class="tools-item-title">添加一个</div>
-          </div> -->
+              <div class="tools-item-add">
+                <el-icon><Plus /></el-icon>
+              </div>
+              <div class="tools-item-title">添加一个</div>
+            </div> -->
         </div>
       </section>
+    </div>
+    <div class="loading-container" v-else>
+      <img class="loading" src="/loading.gif" alt="" />
     </div>
   </el-scrollbar>
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue"
+import { ref, onBeforeMount, onMounted, onBeforeUnmount } from "vue"
 import { APIs } from "../utils/tools.ts"
 import data from "../utils/tools.ts"
 
 import IndexedDBService from "../utils/db"
 
 const prefix = ref("https://ebugs.l2.ttut.cc/drawing-bed/tools-icon/")
+const loading = ref(false)
+const onLoad = () => {
+  loading.value = !loading.value
+}
+
+onMounted(() => {
+  onLoad()
+})
+
 const items = ref([])
 const dbService = new IndexedDBService("Bugs")
 dbService.openDB(1, "Tools", "type").then(() => {
@@ -50,7 +62,7 @@ const initData = params => {
 }
 const getItems = () => {
   dbService.getAllData("Tools").then(res => {
-    if (!res.length) {
+    if (res && !res.length) {
       // 初始化数据
       data.forEach(i => {
         initData(i)
@@ -69,6 +81,16 @@ const test = async () => {
 </script>
 
 <style lang="scss" scoped>
+.loading-container {
+  width: 100%;
+  height: calc(100vh - 64px - 113px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 10%;
+  }
+}
 .tools-container {
   width: 100%;
   height: calc(100vh - 64px - 113px);
