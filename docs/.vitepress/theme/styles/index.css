@@ -160,3 +160,10 @@ html.dark {
 ::-webkit-scrollbar-thumb:hover {
     background: rgba(0, 0, 0, 0.4);
 }
+
+
+/* 重写饿了么样式 */
+.el-button--primary {
+    background-color: var(--vp-c-brand) !important;
+    border-color: var(--vp-c-brand) !important;
+}
