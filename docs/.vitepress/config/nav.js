@@ -39,7 +39,7 @@ const nav = [
     },
     {
         "text": "搬过的🧱",
-        "link": "/works/",
+        "link": "/works",
         "target": "_self",
         "activeMatch": '/works',
     },
