@@ -6,6 +6,13 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "4294086",
+      "name": "手",
+      "font_class": "shou",
+      "unicode": "e78d",
+      "unicode_decimal": 59277
+    },
+    {
       "icon_id": "5387519",
       "name": "对号",
       "font_class": "duihao",
