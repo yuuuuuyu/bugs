@@ -1,11 +1,11 @@
 const nav = [
     {
-        "text": "首页",
+        "text": "首页🏠",
         "link": "/",
         "target": "_self",
     },
     {
-        "text": "博客",
+        "text": "博客👀",
         "link": "/blog",
         "target": "_self"
     },
@@ -15,13 +15,13 @@ const nav = [
         "target": "_self"
     },
     {
-        "text": "笔记",
+        "text": "笔记📒",
         "link": "/notes/",
         "target": "_self",
         "activeMatch": '/notes/',
     },
     {
-        "text": "蜂舟平台",
+        "text": "蜂舟平台🐝",
         "items": [
             {
                 "text": "Bugs",
@@ -36,6 +36,12 @@ const nav = [
                 "activeMatch": '/skills/'
             },
         ],
+    },
+    {
+        "text": "搬过的🧱",
+        "link": "/works/",
+        "target": "_self",
+        "activeMatch": '/works',
     },
 ]
 export default nav
