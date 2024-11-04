@@ -31,10 +31,17 @@
 import { ref, onBeforeMount, onMounted, onBeforeUnmount } from "vue"
 import { APIs } from "../utils/tools.ts"
 import data from "../utils/tools.ts"
-import watermark from "../utils/watermark.ts"
 import IndexedDBService from "../utils/db"
 
-watermark.create()
+if (typeof window !== "undefined") {
+  import("../utils/watermark.ts")
+    .then(({ default: watermark }) => {
+      watermark.create()
+    })
+    .catch(error => {
+      console.error("Failed to load watermark module:", error)
+    })
+}
 
 const prefix = ref("https://ebugs.l2.ttut.cc/drawing-bed/tools-icon/")
 const loading = ref(false)
