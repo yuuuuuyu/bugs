@@ -109,8 +109,9 @@ export const SITEs = [
     icon: "lanhu.png",
   },
   {
-    name: "AppStoreRU",
-    url: "https://appstorrent.ru/",
+    name: "图片转换",
+    url: "https://convertio.co/zh/",
+    icon: "convertio.png",
   },
   {
     name: "Rolldown",
