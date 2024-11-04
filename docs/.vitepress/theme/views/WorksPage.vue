@@ -36,9 +36,16 @@
 <script setup lang="ts">
 import { ref, onMounted } from "vue"
 import { works } from "../utils/works"
-import watermark from "../utils/watermark.ts"
 
-watermark.create()
+if (typeof window !== "undefined") {
+  import("../utils/watermark.ts")
+    .then(({ default: watermark }) => {
+      watermark.create()
+    })
+    .catch(error => {
+      console.error("Failed to load watermark module:", error)
+    })
+}
 
 const loading = ref(false)
 const onLoad = () => {
