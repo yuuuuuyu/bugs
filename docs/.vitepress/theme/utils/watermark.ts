@@ -10,7 +10,7 @@ const watermark = new Watermark({
   backgroundPosition: "0 0, 0 0",
   backgroundRepeat: "repeat",
   parent: "works-container",
-  zIndex: 10000,
+  zIndex: -1,
   globalAlpha: 0.2,
   mode: "default",
   textType: "stroke",
