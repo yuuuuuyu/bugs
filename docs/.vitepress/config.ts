@@ -84,8 +84,8 @@ const config: UserConfig = {
       },
     },
     editLink: {
-      pattern: "https://gitee.com/yuuuuuyu/bugs/blob/develop/docs/:path",
-      text: "在Gitee上编辑此页",
+      pattern: "https://github.com/yuuuuuyu/bugs/blob/develop/docs/:path",
+      text: "在Github上编辑此页",
     },
   },
 

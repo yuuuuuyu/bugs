@@ -91,7 +91,7 @@ const jump = url => {
         margin-right: 0;
       }
       &:hover {
-        box-shadow: 0 0 10px #ccc;
+        box-shadow: 0 0 15px rgba(4, 105, 248, 0.3);
         transition: all 0.3s ease-in-out;
         background-size: 120%;
         .item-container {
@@ -112,6 +112,12 @@ const jump = url => {
         top: 0%;
         left: 0;
         transition: all 0.3s ease-in-out;
+        // background: linear-gradient(
+        //   90deg,
+        //   #0469f8 0%,
+        //   rgba(255, 255, 255, 0.1) 100%
+        // );
+        // opacity: 0.8;
         background: linear-gradient(
           90deg,
           rgba(255, 255, 255, 1) 0%,
@@ -166,9 +172,10 @@ const jump = url => {
           }
           .works-item-desc {
             font-size: 14px;
-            color: #111;
             flex: 1;
+            color: #111;
             overflow: hidden;
+            font-weight: 500;
           }
         }
         .works-item-btn {
