@@ -36,6 +36,9 @@
 <script setup lang="ts">
 import { ref, onMounted } from "vue"
 import { works } from "../utils/works"
+import watermark from "../utils/watermark.ts"
+
+watermark.create()
 
 const loading = ref(false)
 const onLoad = () => {
