@@ -10,6 +10,7 @@ specifiers:
   element-plus: ^2.3.5
   html2canvas: ^1.4.1
   html2pdf.js: ^0.10.1
+  idb: ^8.0.0
   jspdf: ^2.5.1
   markdown-it-task-lists: ^2.1.1
   sass: ^1.72.0
@@ -17,6 +18,7 @@ specifiers:
   vitepress: ^1.2.2
   vitepress-theme-demoblock: ^2.0.2
   vue: ^3.4.21
+  watermark-js-plus: ^1.5.7
 
 dependencies:
   '@algolia/client-search': 4.23.2
@@ -26,9 +28,11 @@ dependencies:
   driver.js: 1.3.0
   element-plus: 2.4.2_vue@3.4.21
   html2pdf.js: 0.10.1
+  idb: 8.0.0
   search-insights: 2.13.0
   vitepress-theme-demoblock: 2.0.2_c594f28e0f16253bc5751af69d989f6c
   vue: 3.4.21
+  watermark-js-plus: 1.5.7
 
 devDependencies:
   blueimp-md5: 2.19.0
@@ -1505,6 +1509,10 @@ packages:
       jspdf: 2.5.1
     dev: false
 
+  /idb/8.0.0:
+    resolution: {integrity: sha512-l//qvlAKGmQO31Qn7xdzagVPPaHTxXx199MhrAFuVBTPqydcPYBWjkrbv4Y0ktB+GmWOiwHl237UUOrLmQxLvw==}
+    dev: false
+
   /ignore/5.2.4:
     resolution: {integrity: sha512-MAb38BcSbH0eHNBxn7ql2NH/kX33OkB3lZ1BNdh7ENeRChHTYsTvWrMubiIAMNS2llXEEgZ1MUOBtXChP3kaFQ==}
     engines: {node: '>= 4'}
@@ -2250,6 +2258,11 @@ packages:
       '@vue/runtime-dom': 3.5.12
       '@vue/server-renderer': 3.5.12_vue@3.5.12
       '@vue/shared': 3.5.12
+
+  /watermark-js-plus/1.5.7:
+    resolution: {integrity: sha512-KaQEUnvBX5em2hBeuKcpAASpV+sO1j8NbXY7FL7jb0w1TCKmMSyn8nkj2e+KeleuQ1iwyXHEMFdSWXDIQsACYQ==}
+    engines: {node: '>=20.0.0'}
+    dev: false
 
   /yaml/2.3.4:
     resolution: {integrity: sha512-8aAvwVUSHpfEqTQ4w/KMlf3HcRdt50E5ODIQJBw1fQ5RL34xabzxtUlzTXVqc4rkZsPbvrXKWnABCD7kWSmocA==}

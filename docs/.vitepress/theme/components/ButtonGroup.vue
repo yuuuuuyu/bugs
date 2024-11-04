@@ -44,6 +44,7 @@ import { ref, computed, onMounted, onUnmounted } from "vue"
 import { useRoute, useData } from "vitepress"
 import { long2short } from "../utils/shortUrl"
 import { copyText } from "../utils/copyText"
+import config from "../../config"
 
 const route = useRoute()
 const isEN = computed(() => route.path.startsWith("/en"))
@@ -78,11 +79,12 @@ const copyLink = event => {
   if (typeof window !== "undefined") {
     clearTimeout(timer)
     const path = window.location.pathname.slice(0)
+
     const key = decodeURI(path).split(".html")[0]
 
     const shortUrl = long2short[key]
 
-    copyText(`${window.location.host}/s.html?u=${shortUrl}`)
+    copyText(`${window.location.host}${config.base}/s.html?u=${shortUrl}`)
     btnText.value = "复制成功"
     isCopySuccess.value = true
     timer = setTimeout(() => {

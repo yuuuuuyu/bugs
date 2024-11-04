@@ -16,6 +16,10 @@
     background-color: var(--vp-code-block-bg);
 }
 
+html {
+    user-select: none;
+}
+
 html.dark {
     --vp-code-block-bg: var(--vp-c-bg-alt);
 }
@@ -122,6 +126,18 @@ html.dark {
     width: 300px !important;
 }
 
+/* 分页器 */
+.vp-doc ul.el-pager {
+    padding: 0;
+}
+
+.el-pagination .el-pagination__total {
+    flex: 1 1 auto;
+}
+
+.el-pagination.is-background .el-pager li.is-active {
+    background: var(--vp-c-brand) !important;
+}
 
 /* 默认隐藏滚动条 */
 ::-webkit-scrollbar {
@@ -147,4 +163,11 @@ html.dark {
 
 ::-webkit-scrollbar-thumb:hover {
     background: rgba(0, 0, 0, 0.4);
+}
+
+
+/* 重写饿了么样式 */
+.el-button--primary {
+    background-color: var(--vp-c-brand) !important;
+    border-color: var(--vp-c-brand) !important;
 }
