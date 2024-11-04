@@ -18,6 +18,7 @@ specifiers:
   vitepress: ^1.2.2
   vitepress-theme-demoblock: ^2.0.2
   vue: ^3.4.21
+  watermark-js-plus: ^1.5.7
 
 dependencies:
   '@algolia/client-search': 4.23.2
@@ -31,6 +32,7 @@ dependencies:
   search-insights: 2.13.0
   vitepress-theme-demoblock: 2.0.2_c594f28e0f16253bc5751af69d989f6c
   vue: 3.4.21
+  watermark-js-plus: 1.5.7
 
 devDependencies:
   blueimp-md5: 2.19.0
@@ -2256,6 +2258,11 @@ packages:
       '@vue/runtime-dom': 3.5.12
       '@vue/server-renderer': 3.5.12_vue@3.5.12
       '@vue/shared': 3.5.12
+
+  /watermark-js-plus/1.5.7:
+    resolution: {integrity: sha512-KaQEUnvBX5em2hBeuKcpAASpV+sO1j8NbXY7FL7jb0w1TCKmMSyn8nkj2e+KeleuQ1iwyXHEMFdSWXDIQsACYQ==}
+    engines: {node: '>=20.0.0'}
+    dev: false
 
   /yaml/2.3.4:
     resolution: {integrity: sha512-8aAvwVUSHpfEqTQ4w/KMlf3HcRdt50E5ODIQJBw1fQ5RL34xabzxtUlzTXVqc4rkZsPbvrXKWnABCD7kWSmocA==}
