@@ -37,6 +37,16 @@
 import { ref, onMounted } from "vue"
 import { works } from "../utils/works"
 
+if (typeof window !== "undefined") {
+  import("../utils/watermark.ts")
+    .then(({ default: watermark }) => {
+      watermark.create()
+    })
+    .catch(error => {
+      console.error("Failed to load watermark module:", error)
+    })
+}
+
 const loading = ref(false)
 const onLoad = () => {
   loading.value = !loading.value
@@ -86,6 +96,7 @@ const jump = url => {
       background-size: 100%;
       background-position: left;
       transition: all 0.3s ease-in-out;
+      z-index: 99999;
 
       &:nth-child(4n) {
         margin-right: 0;
