@@ -10,7 +10,7 @@ export const works = [
   {
     title: "大屏动画场景编排vue2",
     name: "animator-vue2",
-    url: "https://ebugs.l2.ttut.cc/animator/",
+    url: "https://ebugs.l2.ttut.cc/animator-v2/",
     desc: "基于vue2、animate.css",
     bg: "https://ebugs.l2.ttut.cc/drawing-bed/works/animator.gif",
     github: "https://github.com/yuuuuuyu/animator.git",
