@@ -127,7 +127,7 @@ const test = async () => {
       justify-content: center;
       margin-right: 1px;
       margin-bottom: 8px;
-      z-index: 99999;
+      z-index: 99;
 
       .tools-item-add {
         width: 50px;
