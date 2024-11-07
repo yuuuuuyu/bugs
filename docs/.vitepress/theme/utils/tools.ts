@@ -118,6 +118,11 @@ export const SITEs = [
     url: "https://rolldown.rs/",
     icon: "rolldown.png",
   },
+  {
+    name: "Macosicons",
+    url: "https://macosicons.com/#/",
+    icon: "macos.icons.png",
+  },
 ]
 
 const tools = [
