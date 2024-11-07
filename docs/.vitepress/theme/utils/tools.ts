@@ -123,6 +123,11 @@ export const SITEs = [
     url: "https://macosicons.com/#/",
     icon: "macos.icons.png",
   },
+  {
+    name: "鸿蒙开发",
+    url: "https://developer.huawei.com/consumer/cn/teaching-video/",
+    icon: "harmonyOS.png",
+  },
 ]
 
 const tools = [
