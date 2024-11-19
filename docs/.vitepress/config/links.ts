@@ -193,48 +193,17 @@ export const bugs = [
 
 export const skills = [
   {
-    text: "Beeboat v2.0",
-    collapsible: true,
+    text: "Beeboat v4.0",
+    collapsible: false,
     collapsed: false,
     items: [
       {
-        text: "async/await在蜂舟上妙用",
-        link: "/skills/v2/07await在蜂舟上妙用",
-      },
-      {
-        text: "Vue文件中监听Class中的变量",
-        link: "/skills/v2/06Vue文件中监听Class中的变量",
-      },
-      {
-        text: "使用代码片段重写表格列",
-        link: "/skills/v2/01使用代码片段重写表格列",
-      },
-      {
-        text: "使用代码片段实现动态列",
-        link: "/skills/v2/02使用代码片段实现动态列",
-      },
-      {
-        text: "使用代码片段实现表头合并",
-        link: "/skills/v2/03使用代码片段实现表头合并",
-      },
-      {
-        text: "重写组件事件/属性",
-        link: "/skills/v2/04重写组件事件",
-      },
-      {
-        text: "重写组件事件使用emit",
-        link: "/skills/v2/05重写组件事件使用emit",
-      },
-      {
-        text: "[逻辑事件系列1] 通过判断行数据指定字段来控制按钮的禁用启用",
-        link: "/skills/v2/logic/1",
-      },
-      {
-        text: "[逻辑事件系列2] 通过判断表格多选数据来控制按钮的禁用启用",
-        link: "/skills/v2/logic/2",
+        text: "弹窗内表格默认勾选",
+        link: "/skills/v4/弹窗内表格默认勾选",
       },
     ],
   },
+
   {
     text: "Beeboat v3.0",
     collapsible: true,
@@ -338,13 +307,45 @@ export const skills = [
     ],
   },
   {
-    text: "Beeboat v4.0",
-    collapsible: false,
-    collapsed: false,
+    text: "Beeboat v2.0",
+    collapsible: true,
+    collapsed: true,
     items: [
       {
-        text: "demo",
-        link: "/skills/v4/demo",
+        text: "async/await在蜂舟上妙用",
+        link: "/skills/v2/07await在蜂舟上妙用",
+      },
+      {
+        text: "Vue文件中监听Class中的变量",
+        link: "/skills/v2/06Vue文件中监听Class中的变量",
+      },
+      {
+        text: "使用代码片段重写表格列",
+        link: "/skills/v2/01使用代码片段重写表格列",
+      },
+      {
+        text: "使用代码片段实现动态列",
+        link: "/skills/v2/02使用代码片段实现动态列",
+      },
+      {
+        text: "使用代码片段实现表头合并",
+        link: "/skills/v2/03使用代码片段实现表头合并",
+      },
+      {
+        text: "重写组件事件/属性",
+        link: "/skills/v2/04重写组件事件",
+      },
+      {
+        text: "重写组件事件使用emit",
+        link: "/skills/v2/05重写组件事件使用emit",
+      },
+      {
+        text: "[逻辑事件系列1] 通过判断行数据指定字段来控制按钮的禁用启用",
+        link: "/skills/v2/logic/1",
+      },
+      {
+        text: "[逻辑事件系列2] 通过判断表格多选数据来控制按钮的禁用启用",
+        link: "/skills/v2/logic/2",
       },
     ],
   },
