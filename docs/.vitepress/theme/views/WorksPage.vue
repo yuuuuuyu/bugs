@@ -224,8 +224,9 @@ const jump = url => {
     .works-list {
       .works-item {
         width: 100%;
-        margin-right: 30px;
-        margin-bottom: 30px;
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-bottom: 15px;
       }
     }
   }

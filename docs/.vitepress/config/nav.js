@@ -10,7 +10,7 @@ const nav = [
         "target": "_self"
     },
     {
-        "text": "归档",
+        "text": "归档📦",
         "link": "/archived",
         "target": "_self"
     },
