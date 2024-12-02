@@ -201,6 +201,10 @@ export const skills = [
         text: "弹窗内表格默认勾选",
         link: "/skills/v4/弹窗内表格默认勾选",
       },
+      {
+        text: "[逻辑编排]变量赋值的妙用",
+        link: "/skills/v4/[逻辑编排]变量赋值的妙用",
+      },
     ],
   },
 
