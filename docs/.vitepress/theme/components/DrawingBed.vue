@@ -1,3 +1,10 @@
+<!--
+ * @Description: 
+ * @Author: (于智勇)zhiyong.yu@ytever.com
+ * @Date: 2024-10-28 09:53:16
+ * @LastEditors: (于智勇)zhiyong.yu@ytever.com
+ * @LastEditTime: 2024-12-06 22:42:58
+-->
 <template>
   <el-image
     style="width: 100%"
@@ -23,7 +30,7 @@ const props = defineProps({
 })
 
 const fullUrl = computed(() => {
-  const prefix = "https://ebugs.l2.ttut.cc/drawing-bed/"
+  const prefix = "https://ebugs.l2.bb1a.cn/drawing-bed/"
   return `${prefix}${props.src}`
 })
 </script>
