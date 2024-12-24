@@ -198,12 +198,25 @@ export const skills = [
     collapsed: false,
     items: [
       {
+        text: "注意事项",
+        link: "/skills/v4/注意事项",
+      },
+      {
         text: "弹窗内表格默认勾选",
         link: "/skills/v4/弹窗内表格默认勾选",
       },
       {
         text: "[逻辑编排]变量赋值的妙用",
         link: "/skills/v4/[逻辑编排]变量赋值的妙用",
+      },
+      {
+        text: "业务场景demo",
+        items: [
+          {
+            text: "[逻辑编排]变量赋值的妙用",
+            link: "/skills/v4/[逻辑编排]变量赋值的妙用",
+          },
+        ],
       },
     ],
   },
