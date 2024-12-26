@@ -74,6 +74,11 @@ export const AIs = [
 ]
 export const SITEs = [
   {
+    name: "MSDN",
+    url: "https://next.itellyou.cn",
+    icon: "windows.png",
+  },
+  {
     name: "Vue3js",
     url: "https://vue3js.cn/",
     icon: "vue.png",
