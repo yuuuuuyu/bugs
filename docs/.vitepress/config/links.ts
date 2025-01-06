@@ -202,10 +202,6 @@ export const skills = [
         link: "/skills/v4/注意事项",
       },
       {
-        text: "弹窗内表格默认勾选",
-        link: "/skills/v4/弹窗内表格默认勾选",
-      },
-      {
         text: "[逻辑编排]变量赋值的妙用",
         link: "/skills/v4/[逻辑编排]变量赋值的妙用",
       },
@@ -214,21 +210,29 @@ export const skills = [
         items: [
           {
             text: "表格按钮启用禁用的配置",
-            link: "/skills/v4/表格按钮启用禁用的配置",
+            link: "/skills/v4/[组件交互]表格按钮启用禁用的配置",
           },
           {
             text: "下拉按钮的配置",
-            link: "/skills/v4/下拉按钮的配置",
+            link: "/skills/v4/[组件交互]下拉按钮的配置",
           },
           {
             text: "下拉组件实现级联筛选",
-            link: "/skills/v4/下拉组件实现级联筛选",
+            link: "/skills/v4/[组件交互]独立下拉组件实现级联筛选",
+          },
+          {
+            text: "弹窗选择组件的配置",
+            link: "/skills/v4/[组件交互]弹窗选择组件的配置",
           },
         ],
       },
       {
         text: "业务场景demo",
         items: [
+          {
+            text: "逻辑编排中处理接口返回数据",
+            link: "/skills/v4/逻辑编排中如何获取接口返回的数据",
+          },
           {
             text: "左树右表的事件交互",
             link: "/skills/v4/左树右表的事件交互",
@@ -316,6 +320,10 @@ export const skills = [
         collapsible: true,
         collapsed: false,
         items: [
+          {
+            text: "弹窗内表格默认勾选",
+            link: "/skills/v3/16弹窗内表格默认勾选",
+          },
           {
             text: "左右联动的逻辑事件",
             link: "/skills/v3/07左右联动的逻辑事件",

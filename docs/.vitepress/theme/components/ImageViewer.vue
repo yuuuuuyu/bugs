@@ -55,15 +55,12 @@ function previewImage(e: Event) {
 
 onMounted(() => {
   const docDomContainer = document.querySelector("#VPContent")
-
-  path.includes("posts") &&
-    docDomContainer?.addEventListener("click", previewImage)
+  docDomContainer?.addEventListener("click", previewImage)
 })
 
 onUnmounted(() => {
   const docDomContainer = document.querySelector("#VPContent")
-  path.includes("posts") &&
-    docDomContainer?.removeEventListener("click", previewImage)
+  docDomContainer?.removeEventListener("click", previewImage)
 })
 </script>
 
