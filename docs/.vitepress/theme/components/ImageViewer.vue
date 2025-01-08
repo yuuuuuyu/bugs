@@ -1,8 +1,15 @@
+<!--
+ * @Description: 
+ * @Author: (于智勇)zhiyong.yu@ytever.com
+ * @Date: 2025-01-06 17:47:06
+ * @LastEditors: (于智勇)zhiyong.yu@ytever.com
+ * @LastEditTime: 2025-01-08 11:44:08
+-->
 <template>
   <div class="image-viewer">
     <el-image-viewer
       v-if="show"
-      :src="previewImageInfo.list[0]"
+      :src="previewImageInfo.list[currentIndex]"
       :url-list="previewImageInfo.list"
       @close="show = false"
     />
@@ -17,6 +24,7 @@ const route = useRoute()
 const { path } = route
 
 const show = ref(false)
+const currentIndex = ref(0)
 const previewImageInfo = reactive<{ url: string; list: string[]; idx: number }>(
   {
     url: "",
@@ -36,9 +44,10 @@ function previewImage(e: Event) {
 
     const idx = Array.from(imgs).findIndex(el => el === target)
     const urls = Array.from(imgs).map(el => el.src)
-
     const url = target.getAttribute("src")
+
     if (url) {
+      currentIndex.value = idx
       previewImageInfo.url = url
       previewImageInfo.list = urls
       previewImageInfo.idx = idx
@@ -47,6 +56,10 @@ function previewImage(e: Event) {
       if (idx === -1 && url) {
         previewImageInfo.list.push(url)
         previewImageInfo.idx = previewImageInfo.list.length - 1
+      } else {
+        const _arr = urls.slice(idx)
+        const _arrprefix = urls.slice(0, idx)
+        previewImageInfo.list = [..._arr, ..._arrprefix]
       }
       show.value = true
     }
