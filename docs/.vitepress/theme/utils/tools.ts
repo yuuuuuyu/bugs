@@ -74,6 +74,16 @@ export const AIs = [
 ]
 export const SITEs = [
   {
+    name: "Web.dev",
+    url: "https://web.dev/learn/performance",
+    icon: "default.png",
+  },
+  {
+    name: "BrowserList",
+    url: "https://browsersl.ist/",
+    icon: "browser.png",
+  },
+  {
     name: "MSDN",
     url: "https://next.itellyou.cn",
     icon: "windows.png",
