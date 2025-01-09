@@ -206,6 +206,10 @@ export const skills = [
         link: "/skills/v4/[逻辑编排]变量赋值的妙用",
       },
       {
+        text: "“启用条件”事件该怎么用?",
+        link: "/skills/v4/“启用条件”事件该怎么用",
+      },
+      {
         text: "组件交互",
         items: [
           {
@@ -235,11 +239,11 @@ export const skills = [
           },
           {
             text: "左树右表的事件交互",
-            link: "/skills/v4/左树右表的事件交互",
+            link: "/skills/v4/[组件交互]左树右表的事件交互",
           },
           {
             text: "打开弹窗的事件配置",
-            link: "/skills/v4/打开弹窗的事件配置",
+            link: "/skills/v4/[组件交互]打开弹窗的事件配置",
           },
         ],
       },
@@ -257,6 +261,10 @@ export const skills = [
           {
             text: "如何重写原子组件的事件",
             link: "/skills/v4/[二次开发]如何重写原子组件的事件",
+          },
+          {
+            text: "如何在重写的兄弟组件间共享同一份数据",
+            link: "/skills/v4/[二次开发]如何在重写的兄弟组件间共享同一份数据",
           },
         ],
       },
