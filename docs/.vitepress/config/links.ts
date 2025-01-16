@@ -266,6 +266,10 @@ export const skills = [
             text: "如何在重写的兄弟组件间共享同一份数据",
             link: "/skills/v4/[二次开发]如何在重写的兄弟组件间共享同一份数据",
           },
+          {
+            text: "如何为树节点添加icon图标",
+            link: "/skills/v4/[二次开发]如何为树节点添加icon图标",
+          },
         ],
       },
     ],
