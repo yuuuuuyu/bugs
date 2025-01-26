@@ -67,8 +67,13 @@ export const APIs = [
 ]
 export const AIs = [
   {
+    name: "DeepSeek",
+    url: "https://chat.deepseek.com/",
+    icon: "deepseek.png",
+  },
+  {
     name: "阿水",
-    url: "https://ai.ashuiai.com/auth/register?inviteCode=5J4SAHL7IX",
+    url: "https://ai.rcouyi.com/",
     icon: "ai.png",
   },
 ]
