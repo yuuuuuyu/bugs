@@ -94,6 +94,17 @@ export const notes = [
       },
     ],
   },
+  {
+    text: "CSS",
+    collapsible: true,
+    collapsed: false,
+    items: [
+      {
+        text: "纯CSS实现图片四角边框",
+        link: "/notes/css/纯CSS实现图片四角边框.md",
+      },
+    ],
+  },
 ]
 
 export const bugs = [
