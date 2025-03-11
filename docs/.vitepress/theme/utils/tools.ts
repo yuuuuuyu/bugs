@@ -79,6 +79,11 @@ export const AIs = [
 ]
 export const SITEs = [
   {
+    name: "SMS接码",
+    url: "https://sms-activate.org/cn",
+    icon: "sms.png",
+  },
+  {
     name: "Web.dev",
     url: "https://web.dev/learn/performance",
     icon: "default.png",
@@ -100,7 +105,7 @@ export const SITEs = [
   },
   {
     name: "Jenkins",
-    url: "http://l2.ttut.cc:49692/login?from=%2F",
+    url: "http://l2.bb1a.cn:49692/login?from=%2F",
     icon: "jenkins.png",
   },
   {
