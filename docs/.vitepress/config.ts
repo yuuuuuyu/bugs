@@ -27,7 +27,7 @@ const config: UserConfig = {
         timeStyle: "medium",
       },
     },
-    socialLinks: [{ icon: "github", link: "https://github.com/yuuuuuyu" }],
+    // socialLinks: [{ icon: "github", link: "https://github.com/yuuuuuyu" }],
     nav,
     sidebar,
     logo: "/logo.png",
