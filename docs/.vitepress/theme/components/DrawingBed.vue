@@ -30,7 +30,7 @@ const props = defineProps({
 })
 
 const fullUrl = computed(() => {
-  const prefix = "https://ebugs.l2.bb1a.cn/drawing-bed/"
+  const prefix = "http://www.e1024.top/drawing-bed/"
   return `${prefix}${props.src}`
 })
 </script>

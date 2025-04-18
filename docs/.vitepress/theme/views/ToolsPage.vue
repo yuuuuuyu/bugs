@@ -43,7 +43,7 @@ if (typeof window !== "undefined") {
     })
 }
 
-const prefix = ref("https://ebugs.l2.bb1a.cn//drawing-bed/tools-icon/")
+const prefix = ref("http://www.e1024.top/drawing-bed/tools-icon/")
 const loading = ref(false)
 const onLoad = () => {
   loading.value = !loading.value
