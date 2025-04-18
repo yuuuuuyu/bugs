@@ -16,9 +16,9 @@
     background-color: var(--vp-code-block-bg);
 }
 
-html {
+/* html {
     user-select: none;
-}
+} */
 
 html.dark {
     --vp-code-block-bg: var(--vp-c-bg-alt);

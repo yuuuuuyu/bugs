@@ -67,12 +67,37 @@ export const APIs = [
 ]
 export const AIs = [
   {
+    name: "DeepSeek",
+    url: "https://chat.deepseek.com/",
+    icon: "deepseek.png",
+  },
+  {
     name: "阿水",
-    url: "https://ai.ashuiai.com/auth/register?inviteCode=5J4SAHL7IX",
+    url: "https://ai.rcouyi.com/",
     icon: "ai.png",
   },
 ]
 export const SITEs = [
+  {
+    name: "SMS接码",
+    url: "https://sms-activate.org/cn",
+    icon: "sms.png",
+  },
+  {
+    name: "Web.dev",
+    url: "https://web.dev/learn/performance",
+    icon: "default.png",
+  },
+  {
+    name: "BrowserList",
+    url: "https://browsersl.ist/",
+    icon: "browser.png",
+  },
+  {
+    name: "MSDN",
+    url: "https://next.itellyou.cn",
+    icon: "windows.png",
+  },
   {
     name: "Vue3js",
     url: "https://vue3js.cn/",
@@ -80,7 +105,7 @@ export const SITEs = [
   },
   {
     name: "Jenkins",
-    url: "http://l2.ttut.cc:49692/login?from=%2F",
+    url: "http://l2.bb1a.cn:49692/login?from=%2F",
     icon: "jenkins.png",
   },
   {
@@ -117,6 +142,16 @@ export const SITEs = [
     name: "Rolldown",
     url: "https://rolldown.rs/",
     icon: "rolldown.png",
+  },
+  {
+    name: "Macosicons",
+    url: "https://macosicons.com/#/",
+    icon: "macos.icons.png",
+  },
+  {
+    name: "鸿蒙开发",
+    url: "https://developer.huawei.com/consumer/cn/teaching-video/",
+    icon: "harmonyOS.png",
   },
 ]
 

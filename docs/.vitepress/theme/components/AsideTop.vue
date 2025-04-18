@@ -14,4 +14,3 @@ import ButtonGroup from "./ButtonGroup.vue"
   flex-flow: row nowrap;
 }
 </style>
-

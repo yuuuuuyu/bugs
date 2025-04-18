@@ -43,7 +43,7 @@ if (typeof window !== "undefined") {
     })
 }
 
-const prefix = ref("https://ebugs.l2.ttut.cc/drawing-bed/tools-icon/")
+const prefix = ref("http://www.e1024.top/drawing-bed/tools-icon/")
 const loading = ref(false)
 const onLoad = () => {
   loading.value = !loading.value
@@ -127,7 +127,7 @@ const test = async () => {
       justify-content: center;
       margin-right: 1px;
       margin-bottom: 8px;
-      z-index: 99999;
+      z-index: 99;
 
       .tools-item-add {
         width: 50px;
