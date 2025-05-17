@@ -38,6 +38,16 @@ const nav = [
         ],
     },
     {
+        "text": "💼",
+        "items": [
+            {
+                "text": "Goin-docs-app",
+                "link": "http://www.go2x.work/goin-docs/",
+                "target": "_blank",
+            },
+        ],
+    },
+    {
         "text": "搬过的🧱",
         "link": "/works",
         "target": "_self",
