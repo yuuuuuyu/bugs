@@ -52,7 +52,6 @@ const config: UserConfig = {
         })
       md.renderer.rules.link_open = (tokens, idx, options, env, self) => {
         const token = tokens[idx]
-        console.log(token)
 
         const hrefIndex = token.attrIndex("href")
         if (hrefIndex >= 0) {
