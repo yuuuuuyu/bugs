@@ -26,10 +26,20 @@ const config: UserConfig = {
         const srcIndex = token.attrIndex("src")
         if (srcIndex >= 0) {
           const src = token.attrs[srcIndex][1]
-          if (src.startsWith("__BASE_URL__")) {
-            token.attrs[srcIndex][1] = src.replace("__BASE_URL__", "")
+          // 如果是完整的URL（以http开头），保持不变
+          if (src.startsWith("http") || src.startsWith("https")) {
+            return defaultImageRender(tokens, idx, options, env, self)
           }
-          token.attrs[srcIndex][1] = withBase(token.attrs[srcIndex][1])
+
+          // 处理外部图片（以__BASE_URL__开头）
+          if (src.startsWith("__BASE_URL__")) {
+            token.attrs[srcIndex][1] =
+              BASE_URL + src.replace("__BASE_URL__", "")
+          }
+          // 处理内部文档图片（以/开头）
+          else if (src.startsWith("/")) {
+            token.attrs[srcIndex][1] = withBase(src)
+          }
         }
         return defaultImageRender(tokens, idx, options, env, self)
       }
@@ -42,19 +52,25 @@ const config: UserConfig = {
         })
       md.renderer.rules.link_open = (tokens, idx, options, env, self) => {
         const token = tokens[idx]
+        console.log(token)
+
         const hrefIndex = token.attrIndex("href")
         if (hrefIndex >= 0) {
           const href = token.attrs[hrefIndex][1]
+          // 如果是完整的URL（以http开头），保持不变
+          if (href.startsWith("http") || href.startsWith("https")) {
+            return defaultLinkRender(tokens, idx, options, env, self)
+          }
+
           // 处理外部链接（以__BASE_URL__开头）
           if (href.startsWith("__BASE_URL__")) {
             token.attrs[hrefIndex][1] =
               BASE_URL + href.replace("__BASE_URL__", "")
           }
-          // 处理内部文档链接（以/开头但不以http开头）
-          else if (href.startsWith("/") && !href.startsWith("http")) {
+          // 处理内部文档链接（以/开头）
+          else if (href.startsWith("/")) {
             token.attrs[hrefIndex][1] = withBase(href)
           }
-          // 其他链接（如完整的URL）保持不变
         }
         return defaultLinkRender(tokens, idx, options, env, self)
       }
