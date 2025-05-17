@@ -13,6 +13,7 @@ import "./iconfont/iconfont.css"
 import AsideTop from "./components/AsideTop.vue"
 import comment from "./components/Comment.vue"
 import ImageViewer from "./components/ImageViewer.vue"
+import CustomVideo from "./components/CustomVideo.vue"
 
 export default {
   ...DefaultTheme,
@@ -41,6 +42,10 @@ export default {
     Object.entries(ElementPlusIconsVue).forEach(([name, component]) => {
       ctx.app.component(name, component)
     })
+    ctx.app.component("Comment", comment)
+    ctx.app.component("AsideTop", AsideTop)
+    ctx.app.component("ImageViewer", ImageViewer)
+    ctx.app.component("CustomVideo", CustomVideo)
   },
 }
 

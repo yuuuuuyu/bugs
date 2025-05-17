@@ -2,7 +2,7 @@
 
 给图片添加炫酷的“角落”边框效果，不需要复杂的图片素材，仅凭短短几行 CSS 就能实现。通过 mask + conic-gradient，可以让非角落区域被遮罩，仅保留四个角的边框。
 
-![纯CSS实现图片四角边框](http://www.e1024.top/drawing-bed/20250302/1.png)
+![纯CSS实现图片四角边框](/drawing-bed/20250302/1.png)
 
 ```css
 img {
