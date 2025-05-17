@@ -6,11 +6,13 @@ import DemoBlock from "vitepress-theme-demoblock/dist/client/components/DemoBloc
 import { ElPopover } from "element-plus"
 
 import DrawingBed from "./components/DrawingBed.vue"
+import CustomVideo from "./components/CustomVideo.vue"
 
 export function useComponents(app) {
   app.component("Demo", Demo)
   app.component("DemoBlock", DemoBlock)
   app.component("ElPopover", ElPopover)
   app.component("DrawingBed", DrawingBed)
+  app.component("CustomVideo", CustomVideo)
 }
 

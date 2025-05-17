@@ -1,13 +1,11 @@
 import { UserConfig } from "vitepress"
 import { demoBlockPlugin } from "vitepress-theme-demoblock"
 import Markd from "markdown-it-task-lists"
+import { withBase } from "./theme/utils/imageUrl"
+import { BASE_URL } from "./theme/utils/config"
 
 import nav from "./config/nav"
 import sidebar from "./config/sidebar"
-
-// 奥德彪语录
-// import oldBiao from "./theme/utils/oldBiao"
-// const message = oldBiao[Math.floor(Math.random() * oldBiao.length)]
 
 const config: UserConfig = {
   base: "/bugs",
@@ -16,6 +14,57 @@ const config: UserConfig = {
     minify: true,
   },
   head: [["link", { rel: "icon", href: "/bugs/favicon.ico" }]],
+  markdown: {
+    config: md => {
+      md.use(demoBlockPlugin)
+      md.use(Markd)
+
+      // 自定义图片处理
+      const defaultImageRender = md.renderer.rules.image
+      md.renderer.rules.image = (tokens, idx, options, env, self) => {
+        const token = tokens[idx]
+        const srcIndex = token.attrIndex("src")
+        if (srcIndex >= 0) {
+          const src = token.attrs[srcIndex][1]
+          if (src.startsWith("__BASE_URL__")) {
+            token.attrs[srcIndex][1] = src.replace("__BASE_URL__", "")
+          }
+          token.attrs[srcIndex][1] = withBase(token.attrs[srcIndex][1])
+        }
+        return defaultImageRender(tokens, idx, options, env, self)
+      }
+
+      // 自定义链接处理
+      const defaultLinkRender =
+        md.renderer.rules.link_open ||
+        ((tokens, idx, options, env, self) => {
+          return self.renderToken(tokens, idx, options)
+        })
+      md.renderer.rules.link_open = (tokens, idx, options, env, self) => {
+        const token = tokens[idx]
+        const hrefIndex = token.attrIndex("href")
+        if (hrefIndex >= 0) {
+          const href = token.attrs[hrefIndex][1]
+          // 处理外部链接（以__BASE_URL__开头）
+          if (href.startsWith("__BASE_URL__")) {
+            token.attrs[hrefIndex][1] =
+              BASE_URL + href.replace("__BASE_URL__", "")
+          }
+          // 处理内部文档链接（以/开头但不以http开头）
+          else if (href.startsWith("/") && !href.startsWith("http")) {
+            token.attrs[hrefIndex][1] = withBase(href)
+          }
+          // 其他链接（如完整的URL）保持不变
+        }
+        return defaultLinkRender(tokens, idx, options, env, self)
+      }
+    },
+  },
+  vite: {
+    define: {
+      __BASE_URL__: JSON.stringify(BASE_URL),
+    },
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     outline: [2, 4],
@@ -92,15 +141,6 @@ const config: UserConfig = {
   title: "八阿哥的博客",
   lang: "zh-CN",
   description: "bug大集合",
-
-  markdown: {
-    config: md => {
-      md.use(demoBlockPlugin, {
-        customStyleTagName: 'style lang="scss"', // style标签会解析为<style lang="scss"><style>
-      })
-      md.use(Markd)
-    },
-  },
 }
 
 export default config
